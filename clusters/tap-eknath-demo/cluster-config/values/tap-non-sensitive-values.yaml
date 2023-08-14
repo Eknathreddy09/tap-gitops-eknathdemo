@@ -281,6 +281,8 @@ tap_install:
           namespace: tap-gui
           secretName: tap-gui-secret
        app_config:
+         auth:
+           allowGuestAccess: true
          techdocs:
             builder: 'external'
             publisher:
