@@ -1,5 +1,5 @@
 ---
-tap-install:
+tap_install:
   values:
     profile: run
     shared:

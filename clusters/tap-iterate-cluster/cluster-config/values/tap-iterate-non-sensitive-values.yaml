@@ -1,5 +1,5 @@
 ---
-tap-install:
+tap_install:
   values: 
     profile: iterate
     ceip_policy_disclosed: true # Installation fails if this is set to 'false'
