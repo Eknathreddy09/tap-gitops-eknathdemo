@@ -1,0 +1,5 @@
+---
+kp_default_repository: "exploreindiatapsolreg.azurecr.io/tap161/build-service"
+kp_default_repository_secret:
+  name: kp-default-repository-creds
+  namespace: tap-install
