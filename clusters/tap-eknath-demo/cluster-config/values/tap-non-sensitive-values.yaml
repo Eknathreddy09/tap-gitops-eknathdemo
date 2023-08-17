@@ -301,36 +301,6 @@ tap_install:
          customize:
            custom_name: "Demo Developer Portal"
            default_route: "/catalog?filters%5Bkind%5D=component&filters%5Buser%5D=all"
-         kubernetes:
-           serviceLocatorMethod:
-             type: multiTenant
-           clusterLocatorMethods:
-           - type: config
-             clusters:
-             - url: https://${KUBERNETES_SERVICE_HOST}:${KUBERNETES_SERVICE_PORT}
-               name: host
-               authProvider: serviceAccount
-               serviceAccountToken: ${KUBERNETES_SERVICE_ACCOUNT_TOKEN}
-               skipTLSVerify: true
-               skipMetricsLookup: false
-             - url: https://tap-tkgm-run-01-caca4813.westus2.cloudapp.azure.com:6443
-               name: demo-tkgm-run-01
-               authProvider: serviceAccount
-               serviceAccountToken: eyJhbGciOiJSUzI1NiIsImtpZCI6IkNJaE1LZWxIUHFueWI3cEhzQXZzWHBQdjVSRUczVzI0eDRhYnJVOHZyeEkifQ.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJ0YXAtZ3VpIiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9zZWNyZXQubmFtZSI6InRhcC1ndWktdmlld2VyIiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9zZXJ2aWNlLWFjY291bnQubmFtZSI6InRhcC1ndWktdmlld2VyIiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9zZXJ2aWNlLWFjY291bnQudWlkIjoiYWFmYjU0ODEtZmMwNS00YzcwLWE3ZjQtNTVmZWE1NTUxNDIzIiwic3ViIjoic3lzdGVtOnNlcnZpY2VhY2NvdW50OnRhcC1ndWk6dGFwLWd1aS12aWV3ZXIifQ.hxEp659aHzo9O28zZGTHnJBAWlwj7orA7J4NpMpc8PaMXlwxnFkwQnoFuyidw3zUubeOt1y1nVd1oEblWxbrT1Ey9T-Ldj2sbFJATtxx3XzQU34NtKJsuyv7f83rrbbCkFluBWiLXzCinEWeWewA-UucXsGsXmRH1lHA8c1MgrDmxKWGnf0u71PW3_I-8QALJgAYA0u4WxBcnuZLNJjuQH7JQI406Mf8_lOIPVwo5dUCgS1XpnJIYeDCewGN2-gB6x9ExjmIvBwQx3GUdMT_GPRFEtM612fyWhNjEPUmqVnVeRT3DfrMU64NMN6G5-0ZbLTV39O5G_dnnvylWlE8Xw
-               skipTLSVerify: true
-               skipMetricsLookup: true
-             - url: https://tap-aks-run-02-dns-jw3434kv.hcp.westus2.azmk8s.io:443
-               name: demo-aks-run-02
-               authProvider: serviceAccount
-               serviceAccountToken: eyJhbGciOiJSUzI1NiIsImtpZCI6Imlfb2ZrQWRNUGdUZ3NUMndLbUdHYldrY011U3ZST3BLUlVWZnJxZE4wQW8ifQ.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJ0YXAtZ3VpIiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9zZWNyZXQubmFtZSI6InRhcC1ndWktdmlld2VyIiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9zZXJ2aWNlLWFjY291bnQubmFtZSI6InRhcC1ndWktdmlld2VyIiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9zZXJ2aWNlLWFjY291bnQudWlkIjoiMTgyYmYyODgtZWZlYi00ZWRjLWIwNWQtNzY1OTZmMDc4N2NiIiwic3ViIjoic3lzdGVtOnNlcnZpY2VhY2NvdW50OnRhcC1ndWk6dGFwLWd1aS12aWV3ZXIifQ.Ti3kQxbldZZSbQH9uoUsefIskm0FYHbO93_7pjdDdqpUqUcJlPwkKeFJQriy1JZx930mWN504UWyqFinyiPZiPNwxOhlcV0Q3poygj2Z1faXzYauIEQTbulAKUaw0C_T2nGGK7iHXmTreudkg29Ug9tdbVghnD9pvAB6SL0xy6_5p-zHqJIipFqcdyenDWDoIzrz8ovEN7NdZfMSXkmSI85NqF3nN6NYp-QytCR-cl9Guh-Y824g_J59Oq00aMV4E34Hc_Zw0OtVgsBDiZamB15SLqOpAS15F0087u9FN6_9Q6t92C7rM6Stk7LrSPwhFjM4KK0CxpSDp5u4yzc0LI9iHtU9_vCN3BGOzFOpQYUQx5IITFW3kIyEkALjxq_B7wkox8zQn_tFLbkb5ilJm_Eznn2_LKKcCw6J8e-FssRVzhmp2qH7L82wk_W1TVy16AIRcfD_szgMpHPnpcTgtMjTYWW7hkGk2zGgkldcNbc0c0ChZi9-8Xk-UHivdD0KtyqucYMEq42B_P7MUVl1d7RNkDFSPzHmLTOvLudk1rDYWDHEhfrnrSrCzpAposibBeRnbDb1J33a5FYzVnV53ukxg1syRi6r6aaFyWBWRdjH9Fa-pqRU8ZVr6pE3IDOFuvcxG4RhMNfZ-RGxa7CYp12hpKndTskzWhlh8ut6918
-               skipTLSVerify: true
-               skipMetricsLookup: true
-             - url: https://tap-iterate-cluster-dns-n6v5cdrc.hcp.westus2.azmk8s.io:443
-               name: tap-iterate-cluster
-               authProvider: serviceAccount
-               serviceAccountToken: eyJhbGciOiJSUzI1NiIsImtpZCI6IjRpU0x4RXUwcmpHbzJhbG9pcFBmOTJ4VTYyTjk2VDJ5SXNwdVVuMjNjR28ifQ.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJ0YXAtZ3VpIiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9zZWNyZXQubmFtZSI6InRhcC1ndWktdmlld2VyIiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9zZXJ2aWNlLWFjY291bnQubmFtZSI6InRhcC1ndWktdmlld2VyIiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9zZXJ2aWNlLWFjY291bnQudWlkIjoiZWQ1MzFkMTQtMWU0MC00NmEzLWFmZWYtZTIxN2Q5ZWU4ZmJjIiwic3ViIjoic3lzdGVtOnNlcnZpY2VhY2NvdW50OnRhcC1ndWk6dGFwLWd1aS12aWV3ZXIifQ.yR-dXKXIpV8YxVh3_Fp04HbhgmLtMKkuvo9eJiHZMOUJ8UGr3wXb_3FkTSLoPCDWcm6hWjZuyWmxjlSuUp2HvlbAPtLgFsZM2jT-DtrPd36xJr1Y7rbcZMzvfb23665_yF2VR35Tya5_CFV_QV3MQfzt7fWtR1VNYZFn3q8q8Rm-GGeIKAvIqXpcj3fD9ZfTcxOwQ0mCd6ELOnVNQSOFrs1boYdpGMWQqm2ce6Q-4Z55jeG2WFGj0JKDmifIt5oRb-17U_tV1pwc3VP4JahxxV80RWG_x2nTVMc4KxESPlk_zHKmDQ9-o9nVpDec9oZFQFld25Vp37jFg8GFbt1ICQxrAqC2fbVsgywuCuc3K1XXEoQ_4BwdlvezR-b1Mg2Mzh8yfsyltk_LXYhCxlmcyZTJJHFH7fG_sJTXCmiUPsjHTh9J3PnR-65DW37wgVeE9ADiD0dP077Wl-uDVVMi3oR06NCdS-i7QHaPylxNOk4Ym4j6uVyn-2xm7tqKdI2cCG_onwdr7HF5kmsPl-strpz8W5JRYVnRcqSKgm4Aj3VP4s34rNVErHbv1oGuxwZSWTwZ39ofwaEAjyoyhtCMBXMqiRTzVN9XzImu9p4Gy3Offfgq8il1hFb8qvrWUf9bUAFJ70kUZkc-5U1TS20gsHXJhEziSN9rA3pQEeHStD8
-               skipTLSVerify: true
-               skipMetricsLookup: true
          app:
             baseUrl: https://tap-gui.demo.vmwareexploreindia.com
             title: 'Demo Developer Portal'
