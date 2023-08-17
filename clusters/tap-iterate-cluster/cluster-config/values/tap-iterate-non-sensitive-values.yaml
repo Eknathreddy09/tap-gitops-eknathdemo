@@ -20,6 +20,17 @@ tap_install:
         repository: "tap161/build-service" # Replace the project id with yours. In my case eknath-se is the project ID
     image_policy_webhook:
       allow_unmatched_tags: true
+    namespace_provisioner:
+      sync_period: 30s
+      controller: false
+      gitops_install:
+        ref: origin/main
+        subPath: clusters/tap-iterate-cluster/cluster-config/namespace-provisioner/namespaces
+        url: https://github.com/Eknathreddy09/tap-gitops-eknathdemo.git
+        secretRef:
+          name: sync-git
+          namespace: tanzu-sync
+          create_export: true
     contour:
       envoy:
         service:
