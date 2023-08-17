@@ -98,6 +98,11 @@ tap_install:
         project_path: "exploreindiatapsolreg.azurecr.io/tap161/tap-packages"
         username: "exploreindiatapsolreg"
     ceip_policy_disclosed: true
+    buildservice:
+      injected_sidecar_support: true
+      exclude_dependencies: true
+      kp_default_repository: exploreindiatapsolreg.azurecr.io/tap161/build-service
+      kp_default_repository_username: exploreindiatapsolreg
     bitnami_services:
       globals:
         helm_chart:
@@ -290,43 +295,13 @@ tap_install:
                 credentials:
                   accountName: 'taptechdocsblob'
          organization:
-           name: 'TCS Demo'
+           name: 'Demo'
          customize:
-           custom_name: "TCS Demo Developer Portal"
+           custom_name: "Demo Developer Portal"
            default_route: "/catalog?filters%5Bkind%5D=component&filters%5Buser%5D=all"
-         kubernetes:
-           serviceLocatorMethod:
-             type: multiTenant
-           clusterLocatorMethods:
-           - type: config
-             clusters:
-             - url: https://${KUBERNETES_SERVICE_HOST}:${KUBERNETES_SERVICE_PORT}
-               name: host
-               authProvider: serviceAccount
-               serviceAccountToken: ${KUBERNETES_SERVICE_ACCOUNT_TOKEN}
-               skipTLSVerify: true
-               skipMetricsLookup: false
-             - url: https://demo-tkgm-run-01-2ea66a4d.westus2.cloudapp.azure.com:6443
-               name: demo-tkgm-run-01
-               authProvider: serviceAccount
-               serviceAccountToken: eyJhbGciOiJSUzI1NiIsImtpZCI6IlNKVjVMdElmUFNDcWN6LVlqOUlWWkpBQUdHNVU0UmpPN1MwM19JR1NKNDgifQ.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJ0YXAtZ3VpIiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9zZWNyZXQubmFtZSI6InRhcC1ndWktdmlld2VyIiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9zZXJ2aWNlLWFjY291bnQubmFtZSI6InRhcC1ndWktdmlld2VyIiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9zZXJ2aWNlLWFjY291bnQudWlkIjoiOTU5NDA1MjAtZTYzYy00YWI3LTgxYjgtMjU3YjE2ZWNmOWM1Iiwic3ViIjoic3lzdGVtOnNlcnZpY2VhY2NvdW50OnRhcC1ndWk6dGFwLWd1aS12aWV3ZXIifQ.UDkVwNoR1o-40qjl7jyUIp9hb6c482UvXgfHMcUUJg2VCnsUgBx71ujZ_-FiXuxXL5j04hZj1jqEUtUipxcuvABK2Wa7FgTZ8SZ07RAD2NZHQtD9thcOq7J1D2MtYLaIPAk5kNjsTCcKupvCPxul7a8fgmwExX1Jof960cIK7zPpw4FX9UEZD7-2bAa0LK_5PIhpoBE956AQhJ4VbiLTY7-9SeavqOfv0XkrAXEEHA9K0z2fvvCbEdcaC26m-UmQxm1x_IiiNeEJoVh8Z3BNdSFq5rNjxUqVFMzVZEOgOTNh0UIzps5VNfraFdbXK5x0luxEZl-9_EO8aDRhwyhBdg
-               skipTLSVerify: true
-               skipMetricsLookup: true
-             - url: https://demo-aks-run-02-dns-h1lrqxb5.hcp.westus2.azmk8s.io:443
-               name: demo-aks-run-02
-               authProvider: serviceAccount
-               serviceAccountToken: eyJhbGciOiJSUzI1NiIsImtpZCI6IlltcVFBVDlWOVFGMWk2SjREYmxHR2Jkc1dVTjdEREdDaUhQWDV0TVlaTGcifQ.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJ0YXAtZ3VpIiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9zZWNyZXQubmFtZSI6InRhcC1ndWktdmlld2VyIiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9zZXJ2aWNlLWFjY291bnQubmFtZSI6InRhcC1ndWktdmlld2VyIiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9zZXJ2aWNlLWFjY291bnQudWlkIjoiOGQyNjY5NDctNmFhNy00MzdkLTg2NzItNGI1OGZjNTVlMjBmIiwic3ViIjoic3lzdGVtOnNlcnZpY2VhY2NvdW50OnRhcC1ndWk6dGFwLWd1aS12aWV3ZXIifQ.oL1KRhApzevo18KAAiumJsxUFM3alfNLgEJSf7EpeYIQuBYQE4fpqDk-6hZ0WhQDxqKWCQAS9_X9xWbzaOua3f5rbmTqBb3X_VOnf_ilakMMLQkeDt1wyqobQsI5oOFG5CDmggauTXj2xKhnLgemNxqG8V5tmauwNpbKVxIiGtVLx1uSgRh8Fy1hEc-goHlpdCC2AAcPvpqsGxx6R4RXH96Wxhi1l3FbZ4Wb8cBoJ1hJ0hFkbQeIeCvKGYVIdPXwCanegk7y-ZJsKk5_kOuaKjTnFPFEoxuO51nhJKYsT2ajm3sI1NYsHvIXpd3deSPPiSWk2SDhOOvM4Wc30gtjCHliLMqI9laN7XPSv3O5V7nY0efB0yZBrSJOzk1d-Vu6d1IDNBvcD_hq-Qr9NS_clrGVFQ2nPF55HIYzhERTAD5UnXYJBogdwWuwUeF4JC_2-xmC5OU7-Mp66ebPv7c_UnSF9VLHqnRw39QEY1FD9R_Mvf6_FryBOdxcdjUoHGBIjLC35FanpdJfb5ApAixXmWERAvwNYbk8TCJtPA9LXxv9USWYEj6II3zygKP9qhscE8eFrLUHCAoLOV-yDK9Mw_uCKg0xTd4RvWRHrzrGHDVNx8VxQnfNRyck4oLPWNk8jYdBOvIuWZmFE685rsV2CJKhGuTe4xFQmwDhrTAvLEA
-               skipTLSVerify: true
-               skipMetricsLookup: true
-             - url: https://tap-iterate-cluster-dns-n6v5cdrc.hcp.westus2.azmk8s.io:443
-               name: tap-iterate-cluster
-               authProvider: serviceAccount
-               serviceAccountToken: eyJhbGciOiJSUzI1NiIsImtpZCI6InZUd2NTa0RNNEE0NTRaMWFkYXI0d2xOM1pBZFNIN0NkaFVvNkRlbzJxMzAifQ.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJ0YXAtZ3VpIiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9zZWNyZXQubmFtZSI6InRhcC1ndWktdmlld2VyIiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9zZXJ2aWNlLWFjY291bnQubmFtZSI6InRhcC1ndWktdmlld2VyIiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9zZXJ2aWNlLWFjY291bnQudWlkIjoiMGUwYmJjNzUtNzZhZS00OTg1LWI2ZTMtNGQ1ODg0MmQ3OTZlIiwic3ViIjoic3lzdGVtOnNlcnZpY2VhY2NvdW50OnRhcC1ndWk6dGFwLWd1aS12aWV3ZXIifQ.MWRa1tGsXFLxAXAFfUrjxnOjxVRGcSSYS1W--4Rg12Seh-lCG7d4kT1idUpc4KwIztsQtEwq_EeMYvgrO6DXZRJm8TYoiEjYy99PXlWxo-bUCEQgoq_h-fY6HQ5vkX8K59TP4CBFhqzJ_JdgIGYXdYy8hPgs101kyCML5t3wYB0ZlpcaVICwtfHmVTVlhgrv_4hEz7Ksg-lUg4C2Orp1qWL569rHqH5Ee7yv5sLCptaO5BfCV8qfmHfot0E2dXk-5cF_pYyEpiMpI5GdHeCDLnejYyjTP8p5y5gngmK-ah3LLx-j2TBHAPsZ9vIGJvBlvfyXfaj_mPz45aibadqWg1cwoX6TcbqmUm3qaImFj5YFY7WA5HICqXytG2Sz-CPOsHdz_vPV7nXelH9Zbt8S9__SbHs1vPMmoqR3DfqaiVAuyHkUXeTFc1SkT9LzPjLCh5ifkQrPV6yzcpbKJAtV6HsUh1Fu7wcBZUn8pbIt0TyWkT3IE3XEhiR_LaadOqpSkLCRemNCcVDzEeyLAo_Q__V0tdC6ZheAAWOubl8VoxNEs_OO0gGRDfSmA3WvFEvGDQ1bUOSSTAvlOtn0_dQwDRYv42Z1P19cnAdorj2cqVyF9YCXYQid_D6hNpJeK1vByDJRTzUE6GdxixWNLDikEcM52yJjmOxEMdHAGRAx9NU
-               skipTLSVerify: true
-               skipMetricsLookup: true
          app:
             baseUrl: https://tap-gui.demo.vmwareexploreindia.com
-            title: 'TCS Demo Developer Portal'
+            title: 'Demo Developer Portal'
             support:
               url: https://tanzu.vmware.com/support
               items:
@@ -334,7 +309,7 @@ tap_install:
                 icon: email
                 links:
                 - url: https://tanzu.vmware.com/support
-                  title: TCS and Tanzu Team
+                  title: Tanzu Team
               - title: Documentation
                 icon: docs
                 links:
@@ -375,8 +350,8 @@ tap_install:
     api_portal:
       apiPortalServer:
         sourceUrls: "https://petstore.swagger.io/v2/swagger.json, https://petstore3.swagger.io/api/v3/openapi.json"
-        title: "TCS Demo API Portal"
-        description: "This is for TCS Demo"
+        title: "Demo API Portal"
+        description: "This is for Demo"
         ingressDomain: "demo.vmwareexploreindia.com"
         caCertData: |
            -----BEGIN CERTIFICATE-----
