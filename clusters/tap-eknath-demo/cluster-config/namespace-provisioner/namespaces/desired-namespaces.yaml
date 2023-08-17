@@ -2,3 +2,4 @@
 ---
 namespaces:
   - name: tap-workload
+  - name: tap-ns
