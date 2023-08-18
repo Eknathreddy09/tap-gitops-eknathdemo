@@ -31,7 +31,7 @@ tap_install:
           name: sync-git
           namespace: tanzu-sync
           create_export: true
-      additional_resources:
+      additional_sources:
       - git:
           url: https://github.com/Eknathreddy09/tap-gitops-eknathdemo.git
           ref: origin/main
