@@ -33,12 +33,12 @@ tap_install:
           create_export: true
       additional_resources:
          - git:
-            url: https://github.com/Eknathreddy09/tap-gitops-eknathdemo.git
-            ref: origin/main
-            subPath: clusters/tap-iterate-cluster/cluster-config/namespace-provisioner/namespace-resources
-            secretRef:
-              name: git-https # this is the new credential
-              namespace: tap-install
+             url: https://github.com/Eknathreddy09/tap-gitops-eknathdemo.git
+             ref: origin/main
+             subPath: clusters/tap-iterate-cluster/cluster-config/namespace-provisioner/namespace-resources
+             secretRef:
+               name: git-https # this is the new credential
+               namespace: tap-install
       default_parameters:
         supply_chain_service_account:
           secrets:
