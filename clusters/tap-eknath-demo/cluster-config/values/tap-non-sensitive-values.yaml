@@ -358,7 +358,6 @@ tap_install:
         url: "" # Disable embedded integration since it's deprecated
     
     grype:
-      namespace: "tap-workload" # (optional) Defaults to default namespace.
       targetImagePullSecret: "registries-credentials"
       
     api_portal:
