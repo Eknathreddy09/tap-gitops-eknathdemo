@@ -5,6 +5,7 @@ tap_install:
     ceip_policy_disclosed: true # Installation fails if this is set to 'false'
     shared:
       ingress_domain: "demo.vmwareexploreindia.com"
+      ingress_issuer: ""
       kubernetes_version: "1.26.6"
       image_registry:
         project_path: "exploreindiatapsolreg.azurecr.io/tap161/tap-packages"
