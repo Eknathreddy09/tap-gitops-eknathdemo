@@ -61,7 +61,7 @@ tap_install:
     cnrs:
       default_tls_secret: "tap-workload/ca-cert"
       domain_name: demo.vmwareexploreindia.com
-      domain_template: "{{.Namespace}}.{{.Name}}.{{.Domain}}"
+      domain_template: "{{.Name}}.{{.Namespace}}.{{.Domain}}"
       ca_cert_data: |
           -----BEGIN CERTIFICATE-----
           MIIEjzCCA3egAwIBAgISA7nir/sx6EohpMQwPRhZznh3MA0GCSqGSIb3DQEBCwUA
