@@ -3,7 +3,6 @@ apiVersion: tekton.dev/v1beta1
 kind: Pipeline
 metadata:
   name: developer-defined-jenkins-tekton-pipeline
-  namespace: tap-workload
   labels:
     #! This label should be provided to the Workload so that
     #! the supply chain can find this pipeline
