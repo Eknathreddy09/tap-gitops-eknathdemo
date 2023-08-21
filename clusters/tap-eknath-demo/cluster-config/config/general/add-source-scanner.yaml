@@ -11,7 +11,6 @@ stringData:
     #@ load("@ytt:overlay", "overlay")
     #@ load("@ytt:data", "data")
     #@overlay/match by=overlay.subset({"metadata":{"name":"source-test-scan-to-url"}, "kind": "ClusterSupplyChain"})
-    ---
     spec:
       resources:
         #@overlay/match by=overlay.index(2)
