@@ -169,7 +169,7 @@ tap_install:
           policy: cb-scan-policy
         source:
           policy: scan-policy
-#          template: blob-source-scan-template
+          template: blob-source-scan-template
       registry:
         server: "exploreindiatapsolreg.azurecr.io"
         repository: "tap161/build-service"
