@@ -5,7 +5,7 @@ tap_install:
     package_overlays:
     - name: ootb-supply-chain-testing-scanning
       secrets:
-      - name: ootb-supply-chain-testing-scanning-add-source-scanner
+      - name: ootb-supply-chain-testing-scanning-add-source-scanne
     shared:
       kubernetes_version: "1.26.6"
       ingress_issuer: ""
