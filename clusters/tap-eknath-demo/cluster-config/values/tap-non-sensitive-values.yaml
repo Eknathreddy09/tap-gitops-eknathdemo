@@ -117,12 +117,12 @@ tap_install:
           container_pull_secret_ref:
             name: vac-container-pull
             namespace: default
-      postgresql:
-        helm_chart:
-          version: 12.9.0
-        instance_class:
-          description: PostgreSQL by VMware Application Catalog
-          name: postgresql-vac      
+#      postgresql:
+#        helm_chart:
+#          version: 12.9.0
+#        instance_class:
+#          description: PostgreSQL by VMware Application Catalog
+#          name: postgresql-vac      
     namespace_provisioner:
       sync_period: 30s
       controller: false
