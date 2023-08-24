@@ -120,7 +120,7 @@ tap_install:
       postgresql:
         helm_chart:
           repo: oci://us-east1-docker.pkg.dev/vmw-app-catalog/hosted-registry-b01c2bfd816/charts/debian-11
-          version: 15.4.0
+          version: 12.9.0
         instance_class:
           description: PostgreSQL by VMware Application Catalog
           name: postgresql-vac      
