@@ -110,7 +110,7 @@ tap_install:
     bitnami_services:
       globals:
         helm_chart:
-          repo: oci://registry.pivotal.io/tac-for-tanzu-advanced/charts # update this
+          repo: oci://us-east1-docker.pkg.dev/vmw-app-catalog/hosted-registry-b01c2bfd816/charts # update this
           chart_pull_secret_ref:
             name: vac-chart-pull
             namespace: default
