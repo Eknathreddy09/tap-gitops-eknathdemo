@@ -108,9 +108,10 @@ tap_install:
       kp_default_repository: exploreindiatapsolreg.azurecr.io/tap161/build-service
       kp_default_repository_username: exploreindiatapsolreg
     bitnami_services:
-      globals:
+      postgresql:
         helm_chart:
-          repo: oci://us-east1-docker.pkg.dev/vmw-app-catalog/hosted-registry-b01c2bfd816/charts # update this
+          repo: oci://us-east1-docker.pkg.dev/vmw-app-catalog/hosted-registry-b01c2bfd816/charts/debian-11/postgresql # update this
+          version: 15.4.0
           chart_pull_secret_ref:
             name: vac-chart-pull
             namespace: default
