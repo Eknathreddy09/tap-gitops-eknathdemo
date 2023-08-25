@@ -3,3 +3,4 @@
 namespaces:
   - name: tap-workload-1
   - name: tap-workload
+  - name: nithin-ns
