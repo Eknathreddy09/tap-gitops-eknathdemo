@@ -199,6 +199,7 @@ tap_install:
          namespace: "app-live-view"
          secretName: "alv-cert"
     appliveview_connector:
+      activateSensitiveOperations: true
       backend:
         ingressEnabled: true
         host: appliveview.demo.vmwareexploreindia.com
