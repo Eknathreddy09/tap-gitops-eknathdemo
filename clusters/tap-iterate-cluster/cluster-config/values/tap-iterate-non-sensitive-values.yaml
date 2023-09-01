@@ -141,12 +141,12 @@ tap_install:
       backend:
         sslDisabled: "true"
         host: appliveview.demo.vmwareexploreindia.com
-    local_source_proxy: 
-      repository: exploreindiatapsolreg.azurecr.io/iterate-profile/tap-source-proxy
-      push_secret:
-        name: lsp-push-credentials
-        namespace: tap-install
-        create_export: true
+#    local_source_proxy: 
+#      repository: exploreindiatapsolreg.azurecr.io/iterate-profile/tap-source-proxy
+#      push_secret:
+#        name: lsp-push-credentials
+#        namespace: tap-install
+#        create_export: true
 #    cnrs:
 #      default_tls_secret: tap-workload/ca-cert
 #      domain_template: "{{.Name}}.{{.Namespace}}.{{.Domain}}"
