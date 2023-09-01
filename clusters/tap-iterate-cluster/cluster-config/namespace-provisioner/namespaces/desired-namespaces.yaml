@@ -3,4 +3,18 @@
 namespaces:
   - name: tap-workload-1
   - name: tap-workload
-  - name: nithin-ns
+  - name: tap-demos-w01-s001
+  - name: tap-demos-w01-s002
+  - name: tap-demos-w01-s003
+  - name: tap-demos-w01-s004
+  - name: tap-demos-w01-s005
+  - name: tap-demos-w01-s006
+  - name: tap-demos-w01-s007
+  - name: tap-demos-w01-s008
+  - name: tap-demos-w01-s009
+  - name: tap-demos-w01-s010
+  - name: tap-demos-w01-s011
+  - name: tap-demos-w01-s012
+  - name: tap-demos-w01-s013
+  - name: tap-demos-w01-s014
+  - name: tap-demos-w01-s015
