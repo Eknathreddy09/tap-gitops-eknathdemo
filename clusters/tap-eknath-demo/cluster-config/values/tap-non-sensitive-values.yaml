@@ -302,6 +302,10 @@ tap_install:
     api_auto_registration:
       tap_gui_url: https://tap-gui.demo.vmwareexploreindia.com
     tap_gui:
+       package_overlays:
+       - name: tap-gui
+         secrets:
+         - name: tpb-app-image-overlay-secret
        service_type: ClusterIP
        metadataStoreAutoconfiguration: true
        activateAppLiveViewSecureAccessControl: false
