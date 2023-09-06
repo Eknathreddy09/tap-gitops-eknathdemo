@@ -167,7 +167,7 @@ tap_install:
           secrets:
             - git-https
     excluded_packages:
-    - policy.apps.tanzu.vmware.com
+#    - policy.apps.tanzu.vmware.com
     - workshops.learningcenter.tanzu.vmware.com
 #    - cnrs.tanzu.vmware.com
 #    - ootb-delivery-basic.tanzu.vmware.com
