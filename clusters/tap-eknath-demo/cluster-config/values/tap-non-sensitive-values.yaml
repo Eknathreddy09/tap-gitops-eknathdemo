@@ -125,7 +125,14 @@ tap_install:
           version: 12.9.0
         instance_class:
           description: PostgreSQL by VMware Application Catalog
-          name: postgresql-vac      
+          name: postgresql-vac
+      mysql: 
+        helm_chart:
+          repo: oci://us-east1-docker.pkg.dev/vmw-app-catalog/hosted-registry-b01c2bfd816/charts/debian-11
+          version: 5.7
+        instance_class:
+          description: MySQL by VMware Application Catalog
+          name: mysql-vac
     namespace_provisioner:
       sync_period: 30s
       controller: false
