@@ -129,7 +129,7 @@ tap_install:
       mysql: 
         helm_chart:
           repo: oci://us-east1-docker.pkg.dev/vmw-app-catalog/hosted-registry-b01c2bfd816/charts/debian-11
-          version: 5.7
+          version: 8.0.34
         instance_class:
           description: MySQL by VMware Application Catalog
           name: mysql-vac
