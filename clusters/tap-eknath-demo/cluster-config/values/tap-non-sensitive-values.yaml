@@ -174,7 +174,7 @@ tap_install:
             - git-https
     excluded_packages:
 #    - policy.apps.tanzu.vmware.com
-    - learningcenter.tanzu.vmware.com
+    - workshops.learningcenter.tanzu.vmware.com
 #    - cnrs.tanzu.vmware.com
 #    - ootb-delivery-basic.tanzu.vmware.com
     supply_chain: testing_scanning
