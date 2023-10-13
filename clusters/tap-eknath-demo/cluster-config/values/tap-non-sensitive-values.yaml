@@ -177,6 +177,7 @@ tap_install:
     - workshops.learningcenter.tanzu.vmware.com
 #    - cnrs.tanzu.vmware.com
 #    - ootb-delivery-basic.tanzu.vmware.com
+    - learningcenter.tanzu.vmware.com
     supply_chain: testing_scanning
     ootb_supply_chain_testing_scanning:
       scanning:
