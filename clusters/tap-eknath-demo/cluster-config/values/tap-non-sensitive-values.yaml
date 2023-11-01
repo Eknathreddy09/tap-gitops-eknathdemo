@@ -224,6 +224,5 @@ tap_install:
            type: LoadBalancer
     cnrs:
       domain_name: demo.vmwareexploreindia.com
-      domain_template: "{{.Name}}.{{.Namespace}}.{{.Domain}}"
-#      ingress_issuer: "letsencrypt-prod"
-#      ca_cert_data: |
+#      domain_template: "{{.Name}}.{{.Namespace}}.{{.Domain}}"
+      domain_template: "{{.Name}}.{{.Domain}}"
