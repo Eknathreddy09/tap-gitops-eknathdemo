@@ -11,7 +11,7 @@ tap_install:
       - name: tpb-app-image-overlay-secret
     shared:
       kubernetes_version: "1.26.6"
-      ingress_issuer: ""
+      ingress_issuer: "letsencrypt-prod"
       ingress_domain: "demo.vmwareexploreindia.com"
       ca_cert_data: |
         -----BEGIN CERTIFICATE-----
