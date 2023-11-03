@@ -206,4 +206,4 @@ tap_install:
            type: LoadBalancer
     cnrs:
       domain_name: demo.vmwareexploreindia.com
-      domain_template: "{{.Name}}.{{.Domain}}"
+      domain_template: "{{.Name}}.{{.Namespace}}.{{.Domain}}"
