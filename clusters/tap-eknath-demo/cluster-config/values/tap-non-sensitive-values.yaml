@@ -50,21 +50,6 @@ tap_install:
     namespace_provisioner:
       sync_period: 30s
       controller: false
-#      - git:
-#          ref: origin/main
-#          subPath: custom-resources/workload-sa
-#          url: https://github.com/Eknathreddy09/tanzu-java-web-app
-#        path: _ytt_lib/workload-sa
-#      - git:
-#          ref: origin/main
-#          subPath: custom-resources/testing-scanning-supplychain
-#          url: https://github.com/Eknathreddy09/tanzu-java-web-app
-#        path: _ytt_lib/testing-scanning-supplychain-setup
-#      - git: 
-#          ref: origin/main
-#          subPath: custom-resources/cb-scanner
-#          url: https://github.com/Eknathreddy09/tanzu-java-web-app
-#        path: _ytt_lib/cb-scanner-setup
       gitops_install:
         ref: origin/main
         subPath: clusters/tap-eknath-demo/cluster-config/namespace-provisioner/namespaces
@@ -87,10 +72,7 @@ tap_install:
           secrets:
             - git-https
     excluded_packages:
-#    - policy.apps.tanzu.vmware.com
-    - workshops.learningcenter.tanzu.vmware.com
-#    - cnrs.tanzu.vmware.com
-#    - ootb-delivery-basic.tanzu.vmware.com
+#    - workshops.learningcenter.tanzu.vmware.com
     - learningcenter.tanzu.vmware.com
     supply_chain: testing_scanning
     ootb_supply_chain_testing_scanning:
@@ -224,5 +206,4 @@ tap_install:
            type: LoadBalancer
     cnrs:
       domain_name: demo.vmwareexploreindia.com
-#      domain_template: "{{.Name}}.{{.Namespace}}.{{.Domain}}"
       domain_template: "{{.Name}}.{{.Domain}}"
