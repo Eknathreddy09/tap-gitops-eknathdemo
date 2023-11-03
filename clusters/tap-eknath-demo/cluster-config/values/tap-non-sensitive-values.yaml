@@ -208,8 +208,6 @@ tap_install:
     scanning:
       metadataStore:
         url: "" # Disable embedded integration since it's deprecated
-        authSecret:
-          importFromNamespace: "tap-workload"
     
     grype:
       targetImagePullSecret: "registries-credentials"
