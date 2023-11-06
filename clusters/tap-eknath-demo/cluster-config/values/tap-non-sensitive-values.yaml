@@ -76,7 +76,7 @@ tap_install:
           secrets:
             - git-https
     excluded_packages:
-#    - workshops.learningcenter.tanzu.vmware.com
+      - workshops.learningcenter.tanzu.vmware.com
     supply_chain: testing_scanning
     ootb_supply_chain_testing_scanning:
       scanning:
