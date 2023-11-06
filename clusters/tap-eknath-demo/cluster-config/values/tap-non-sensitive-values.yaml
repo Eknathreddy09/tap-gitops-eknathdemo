@@ -111,7 +111,7 @@ tap_install:
         host: appliveview.demo.vmwareexploreindia.com
         sslDeactivated: false
  #       caCertData: | 
-     accelerator:
+    accelerator:
        ingress:
           include: true
 #          enable_tls: false
