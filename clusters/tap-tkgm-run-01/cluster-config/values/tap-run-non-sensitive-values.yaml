@@ -5,7 +5,8 @@ tap_install:
     shared:
       kubernetes_version: "1.26.6"
 #      ca_cert_data: |
-      ingress_domain: tap.vmwareexploreindia.com
+      ingress_domain: demo.vmwareexploreindia.com
+      ingress_issuer: "letsencrypt-prod"
       image_registry:
         project_path: "exploreindiatapsolreg.azurecr.io/tap161/tap-packages"
         username: "exploreindiatapsolreg"
@@ -23,6 +24,7 @@ tap_install:
       backend:
         sslDeactivated: true
         ingressEnabled: true
-        host: appliveview.tap.vmwareexploreindia.com
+        host: appliveview.demo.vmwareexploreindia.com
     appsso:
+      domain_name: demo.vmwareexploreindia.com
  #     ca_cert_data: |
