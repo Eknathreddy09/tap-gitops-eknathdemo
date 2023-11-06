@@ -120,6 +120,8 @@ tap_install:
 #         secret_name: tls
     api_auto_registration:
       tap_gui_url: https://tap-gui.demo.vmwareexploreindia.com
+    ootb_delivery_basic:
+      service_account: default
     tap_gui:
        service_type: ClusterIP
        metadataStoreAutoconfiguration: true
