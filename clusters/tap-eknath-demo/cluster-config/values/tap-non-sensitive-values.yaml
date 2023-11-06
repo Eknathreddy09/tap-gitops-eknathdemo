@@ -17,7 +17,7 @@ tap_install:
       image_registry:
         project_path: "exploreindiatapsolreg.azurecr.io/tap161/tap-packages"
         secret: 
-          name: "registry-credentials"
+          name: "buildservice-creds"
           namespace: "tap-install"
     ceip_policy_disclosed: true
     buildservice:
@@ -25,7 +25,7 @@ tap_install:
 #      exclude_dependencies: true
       kp_default_repository: exploreindiatapsolreg.azurecr.io/tap161/build-service
       kp_default_repository_secret:
-        name: "registry-credentials"
+        name: "buildservice-creds"
         namespace: "tap-install"
     bitnami_services:
       globals:
