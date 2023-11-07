@@ -1,3 +1,0 @@
-tap_install:
-  package_repository:
-    oci_repository: exploreindiatapsolreg.azurecr.io/tap161/tap-packages
