@@ -23,7 +23,7 @@ tap_install:
     buildservice:
       injected_sidecar_support: true
 #      exclude_dependencies: true
-      kp_default_repository: "exploreindiatapsolreg.azurecr.io/tap170/build-service"
+      kp_default_repository: "exploreindiatapsolreg.azurecr.io/tap170/tap-packages/build-service"
       kp_default_repository_secret:
         name: "buildservice-creds"
         namespace: "tap-install"
