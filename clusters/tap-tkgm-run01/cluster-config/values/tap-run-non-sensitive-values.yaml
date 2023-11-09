@@ -28,3 +28,6 @@ tap_install:
     appsso:
       domain_name: demo.vmwareexploreindia.com
  #     ca_cert_data: |
+    cnrs:
+      domain_name: demo.vmwareexploreindia.com
+      domain_template: "{{.Name}}.{{.Namespace}}.{{.Domain}}"
