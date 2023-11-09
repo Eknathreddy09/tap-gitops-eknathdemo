@@ -1,4 +1,3 @@
----
 apiVersion: tekton.dev/v1beta1
 kind: Pipeline
 metadata:
@@ -10,7 +9,7 @@ metadata:
 spec:
   results:
   - name: jenkins-job-url   #! To show the job URL on the
-    #! Tanzu Application Platform GUI
+    #! Tanzu Developer Portal
     value: $(tasks.jenkins-task.results.jenkins-job-url)
   params:
   - name: source-url        #! Required
@@ -23,8 +22,14 @@ spec:
   #! given job in Jenkins
   - name: jenkins-task
     taskRef:
-      name: jenkins-task
-      kind: ClusterTask
+      resolver: cluster
+      params:
+        - name: kind
+          value: task
+        - name: namespace
+          value: tap-tasks
+        - name: name
+          value: jenkins-task
     params:
       - name: source-url
         value: $(params.source-url)
