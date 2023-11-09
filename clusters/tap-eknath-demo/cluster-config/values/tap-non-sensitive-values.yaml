@@ -88,7 +88,7 @@ tap_install:
 #          template: blob-source-scan-template
       registry:
         server: "exploreindiatapsolreg.azurecr.io"
-        repository: "tap161/build-service"
+        repository: "tap170/tap-packages/build-service"
       gitops:
           server_address: https://github.com/
           repository_owner: explore-india-booth
