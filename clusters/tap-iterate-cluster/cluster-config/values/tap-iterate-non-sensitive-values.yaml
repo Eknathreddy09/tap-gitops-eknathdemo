@@ -19,7 +19,7 @@ tap_install:
     ootb_supply_chain_testing:
       registry:
         server: "exploreindiatapsolreg.azurecr.io"
-        repository: "tap170/build-service" # Replace the project id with yours. In my case eknath-se is the project ID
+        repository: "tap161/build-service" # Replace the project id with yours. In my case eknath-se is the project ID
     image_policy_webhook:
       allow_unmatched_tags: true
     namespace_provisioner:
