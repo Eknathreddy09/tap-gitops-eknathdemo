@@ -194,7 +194,8 @@ tap_install:
                target: https://github.com/making/rest-service/blob/main/catalog/catalog-info.yaml
     scanning:
       metadataStore:
-        url: "" # Disable embedded integration since it's deprecated
+        exports: # Disable embedded integration since it's deprecated
+          toNamespace: "*"
     
     grype:
       targetImagePullSecret: "registries-credentials"
