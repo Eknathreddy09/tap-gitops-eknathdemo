@@ -2,6 +2,6 @@
 git:
   url: https://github.com/Eknathreddy09/tap-gitops-eknathdemo.git
   ref: origin/main
-  sub_path: clusters/tap-tkgm-run01/cluster-config
+  sub_path: clusters/tap-aks-run-01/cluster-config
 tap_package_repository:
-  oci_repository: exploreindiatapsolreg.azurecr.io/tap161/tap-packages
+  oci_repository: exploreindiatapsolreg.azurecr.io/tap170/tap-packages
