@@ -8,7 +8,7 @@ tap_install:
       ingress_domain: demo.vmwareexploreindia.com
       ingress_issuer: "letsencrypt-prod"
       image_registry:
-        project_path: "exploreindiatapsolreg.azurecr.io/tap161/tap-packages"
+        project_path: "exploreindiatapsolreg.azurecr.io/tap170/tap-packages"
         username: "exploreindiatapsolreg"
     ceip_policy_disclosed: true # Installation fails if this is set to 'false'
     supply_chain: basic
