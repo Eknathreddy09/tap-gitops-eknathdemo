@@ -13,8 +13,10 @@ tap_install:
         username: "exploreindiatapsolreg"
     buildservice:
       exclude_dependencies: true
-      kp_default_repository: "exploreindiatapsolreg.azurecr.io/exploredemo-iterate/build-service" # Replace the project id with yours. In my case eknath-se is the project ID
-      kp_default_repository_username: exploreindiatapsolreg
+      kp_default_repository: "exploreindiatapsolreg.azurecr.io/tap170/tap-packages/iterate/build-service" # Replace the project id with yours. In my case eknath-se is the project ID
+      kp_default_repository_secret:
+        name: "tap-registry"
+        namespace: "tap-install"
     supply_chain: testing
     ootb_supply_chain_testing:
       registry:
