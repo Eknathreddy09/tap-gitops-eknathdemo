@@ -13,7 +13,7 @@ spec:
   packageRef:
     refName: spring-cloud-gateway.tanzu.vmware.com
     versionSelection:
-      constraints: 2.0.8
+      constraints: 2.1.4
   values:
     - secretRef:
         name: tap-values
