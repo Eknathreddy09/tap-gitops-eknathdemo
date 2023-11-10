@@ -1,0 +1,21 @@
+apiVersion: v1
+kind: Secret
+metadata:
+  name: patch-webhook
+  namespace: tap-install
+stringData:
+  patch-webhook.yaml: |
+    #@ load("@ytt:overlay", "overlay")
+
+    #@overlay/match by=overlay.subset({"kind":"Deployment", "metadata":{"name":"webhook", "namespace": "developer-conventions"}}), expects="0+"
+    ---
+    spec:
+      template:
+        spec:
+          containers:
+            #@overlay/match by=overlay.subset({"name": "manager"})
+            - name: manager
+              resources:
+                limits:
+                  cpu: 100m
+                  memory: 512Mi
