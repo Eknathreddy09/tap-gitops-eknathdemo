@@ -9,6 +9,9 @@ tap_install:
     - name: tap-gui
       secrets:
       - name: tpb-app-image-overlay-secret
+    - name: cartographer
+      secrets:
+      - name: patch-cartographer-convention-controller
     shared:
       kubernetes_version: "1.26.6"
       ingress_issuer: "letsencrypt-prod"
