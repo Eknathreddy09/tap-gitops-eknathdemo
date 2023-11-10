@@ -13,8 +13,8 @@ stringData:
       template:
         spec:
           containers:
-            #@overlay/match by=overlay.subset({"name": "manager"})
-            - name: manager
+            #@overlay/match by=overlay.subset({"name": "webhook"})
+            - name: webhook
               resources:
                 limits:
                   cpu: 100m
