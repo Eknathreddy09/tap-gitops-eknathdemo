@@ -7,7 +7,7 @@ stringData:
   patch-webhook.yaml: |
     #@ load("@ytt:overlay", "overlay")
 
-    #@overlay/match by=overlay.subset({"kind":"Deployment", "metadata":{"name":"webhook", "namespace": "developer-conventions"}}), expects="0+"
+    #@overlay/match by=overlay.subset({"kind":"Deployment", "metadata":{"name":"webhook", "namespace": "developer-conventions"}})
     ---
     spec:
       template:
