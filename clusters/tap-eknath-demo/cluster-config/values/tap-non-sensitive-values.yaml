@@ -15,6 +15,9 @@ tap_install:
     - name: developer-conventions
       secrets:
       - name: patch-webhook
+    - name: conventions.appliveview
+      secrets:
+      - name: patch-appliveview
     shared:
       kubernetes_version: "1.26.6"
       ingress_issuer: "letsencrypt-prod"
