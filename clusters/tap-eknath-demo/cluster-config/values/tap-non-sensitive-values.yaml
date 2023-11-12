@@ -12,7 +12,7 @@ tap_install:
     - name: cartographer
       secrets:
       - name: patch-cartographer-convention-controller
-    - name: webhook
+    - name: developer-conventions
       secrets:
       - name: patch-webhook
     shared:
