@@ -4,17 +4,16 @@ metadata:
   name: patch-webhook
   namespace: tap-install
 stringData:
-  patch-webhook.yaml: |
+  custom-package-overlay.yml: |
     #@ load("@ytt:overlay", "overlay")
-
-    #@overlay/match by=overlay.subset({"kind":"Deployment", "metadata":{"name":"webhook", "namespace": "developer-conventions"}})
+    #@overlay/match by=overlay.subset({"kind":"Deployment", "metadata":{"name":"webhook", "namespace": "developer-conventions"}}),expects="1+"
     ---
     spec:
       template:
         spec:
           containers:
             #@overlay/match by=overlay.subset({"name": "webhook"})
-            - name: webhook
+            - name: "webhook"
               resources:
                 limits:
                   cpu: 100m
