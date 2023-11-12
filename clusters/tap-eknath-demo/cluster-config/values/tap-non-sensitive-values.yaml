@@ -15,7 +15,7 @@ tap_install:
     - name: developer-conventions
       secrets:
       - name: patch-webhook
-    - name: conventions.appliveview
+    - name: appliveview-conventions
       secrets:
       - name: patch-appliveview
     shared:
