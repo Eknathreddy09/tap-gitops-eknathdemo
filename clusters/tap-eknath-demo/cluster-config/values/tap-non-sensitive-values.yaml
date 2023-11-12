@@ -12,9 +12,6 @@ tap_install:
     - name: cartographer
       secrets:
       - name: patch-cartographer-convention-controller
-    - name: webhook
-      secrets:
-      - name: patch-webhook
     shared:
       kubernetes_version: "1.26.6"
       ingress_issuer: "letsencrypt-prod"
