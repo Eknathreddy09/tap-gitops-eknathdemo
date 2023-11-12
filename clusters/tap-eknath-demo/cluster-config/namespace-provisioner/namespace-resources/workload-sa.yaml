@@ -18,7 +18,7 @@ secrets:
   - name: registry-credentials
   - name: buildservice-creds
   - name: tap-registry
-#  - name: git-https
+  - name: git-https
 imagePullSecrets:
   - name: registry-credentials
   - name: tap-registry
