@@ -18,6 +18,9 @@ tap_install:
     - name: appliveview-conventions
       secrets:
       - name: patch-appliveview
+    - name: spring-boot-conventions
+      secrets:
+      - name: patch-spring-conventions
     shared:
       kubernetes_version: "1.26.6"
       ingress_issuer: "letsencrypt-prod"
