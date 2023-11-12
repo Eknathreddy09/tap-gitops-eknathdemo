@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: Secret
+metadata:
+  name: patch-spring-conventions
+  namespace: tap-install
+stringData:
+  custom-package-overlay.yml: |
+    #@ load("@ytt:overlay", "overlay")
+    #@overlay/match by=overlay.subset({"kind":"Deployment", "metadata":{"name":"spring-boot-webhook", "namespace": "spring-boot-convention"}}),expects="1+"
+    ---
+    spec:
+      template:
+        spec:
+          containers:
+            #@overlay/match by=overlay.subset({"name": "webhook"})
+            - name: "webhook"
+              resources:
+                limits:
+                  cpu: 100m
+                  memory: 512Mi
