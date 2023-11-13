@@ -6,9 +6,9 @@ tap_install:
     - name: ootb-supply-chain-testing-scanning
       secrets:
       - name: ootb-supply-chain-testing-scanning-add-source-scanner
-#    - name: tap-gui
-#      secrets:
-#      - name: tpb-app-image-overlay-secret
+    - name: tap-gui
+      secrets:
+      - name: tdp-app-image-overlay-secret
     - name: cartographer
       secrets:
       - name: patch-cartographer-convention-controller
