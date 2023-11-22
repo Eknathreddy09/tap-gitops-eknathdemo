@@ -20,6 +20,8 @@ tap_install:
         name: "tap-registry"
         namespace: "tap-install"
     supply_chain: testing
+    excluded_packages:
+    - local-source-proxy.apps.tanzu.vmware.com
     ootb_supply_chain_testing:
       registry:
         server: "exploreindiatapsolreg.azurecr.io"
