@@ -10,22 +10,20 @@ tap_install:
 #      ca_cert_data: |
       image_registry:
         project_path: "exploreindiatapsolreg.azurecr.io/tap170/tap-packages"
-        secret:
-          name: "tap-registry"
-          namespace: "tap-install"
+        username: "exploreindiatapsolreg"
+        password: "z64RFzoh9JC54rQ0kou0zXlRWGj151WnzTQAYUYGJf+ACRDfFa79"
     buildservice:
       exclude_dependencies: true
       kp_default_repository: "exploreindiatapsolreg.azurecr.io/tap170/tap-packages/iterate/build-service" # Replace the project id with yours. In my case eknath-se is the project ID
-      kp_default_repository_secret:
-        name: "tap-registry"
-        namespace: "tap-install"
+      kp_default_repository_username: "exploreindiatapsolreg"
+      kp_default_repository_password: "z64RFzoh9JC54rQ0kou0zXlRWGj151WnzTQAYUYGJf+ACRDfFa79"
     supply_chain: testing
     excluded_packages:
     - local-source-proxy.apps.tanzu.vmware.com
     ootb_supply_chain_testing:
       registry:
         server: "exploreindiatapsolreg.azurecr.io"
-        repository: "tap161/build-service" # Replace the project id with yours. In my case eknath-se is the project ID
+        repository: "exploreindiatapsolreg.azurecr.io/tap170/tap-packages/iterate/build-service" # Replace the project id with yours. In my case eknath-se is the project ID
     image_policy_webhook:
       allow_unmatched_tags: true
 #    namespace_provisioner:
