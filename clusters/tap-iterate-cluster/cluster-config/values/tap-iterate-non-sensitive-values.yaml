@@ -26,25 +26,25 @@ tap_install:
         repository: "exploreindiatapsolreg.azurecr.io/tap170/tap-packages/iterate/build-service" # Replace the project id with yours. In my case eknath-se is the project ID
     image_policy_webhook:
       allow_unmatched_tags: true
-#    namespace_provisioner:
-#      sync_period: 30s
-#      controller: false
-#      gitops_install:
-#        ref: origin/main
-#        subPath: clusters/tap-iterate-cluster/cluster-config/namespace-provisioner/namespaces
-#        url: https://github.com/Eknathreddy09/tap-gitops-eknathdemo.git
-#        secretRef:
-#          name: sync-git
-#          namespace: tanzu-sync
-#          create_export: true
-#      additional_sources:
-#      - git:
-#          url: https://github.com/Eknathreddy09/tap-gitops-eknathdemo.git
-#          ref: origin/main
-#          subPath: clusters/tap-iterate-cluster/cluster-config/namespace-provisioner/namespace-resources
-#          secretRef:
-#            name: sync-git # this is the new credential
-#            namespace: tanzu-sync
+    namespace_provisioner:
+      sync_period: 30s
+      controller: false
+      gitops_install:
+        ref: origin/main
+        subPath: clusters/tap-iterate-cluster/cluster-config/namespace-provisioner/namespaces
+        url: https://github.com/Eknathreddy09/tap-gitops-eknathdemo.git
+        secretRef:
+          name: sync-git
+          namespace: tanzu-sync
+          create_export: true
+      additional_sources:
+      - git:
+          url: https://github.com/Eknathreddy09/tap-gitops-eknathdemo.git
+          ref: origin/main
+          subPath: clusters/tap-iterate-cluster/cluster-config/namespace-provisioner/namespace-resources
+          secretRef:
+            name: sync-git # this is the new credential
+            namespace: tanzu-sync
       default_parameters:
         supply_chain_service_account:
           secrets:
@@ -71,4 +71,3 @@ tap_install:
 #      domain_template: "{{.Name}}.{{.Namespace}}.{{.Domain}}"
       domain_template: "{{.Name}}.{{.Namespace}}.{{.Domain}}"
       domain_name: demo.vmwareexploreindia.com
-#      ca_cert_data: |
