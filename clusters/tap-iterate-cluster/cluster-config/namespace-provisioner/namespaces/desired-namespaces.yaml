@@ -3,3 +3,8 @@
 namespaces:
   - name: tap-workload-1
   - name: tap-workload
+  - name: tanzuworkshop-w01-s001
+  - name: tanzuworkshop-w01-s002
+  - name: tanzuworkshop-w01-s003
+  - name: tanzuworkshop-w01-s004
+  - name: tanzuworkshop-w01-s005
