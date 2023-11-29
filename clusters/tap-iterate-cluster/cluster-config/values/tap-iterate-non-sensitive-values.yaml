@@ -69,5 +69,4 @@ tap_install:
 #        create_export: true
     cnrs:
       domain_template: "{{.Name}}.{{.Domain}}"
-#      domain_template: "{{.Name}}.{{.Namespace}}.{{.Domain}}"
       domain_name: demo.vmwareexploreindia.com
