@@ -7,10 +7,10 @@ tap_install:
                         - host: ENC[AES256_GCM,data:mIWem1guBVeRAg==,iv:9dCc2Wbq84B+JUlAyntoxkfKbL12RtNEFeVR4vWInP0=,tag:MZTspzHqQisf4/TGgpRWOg==,type:str]
                           token: ENC[AES256_GCM,data:HQX5J0ndpHQDzhh/nTkKkC3S1SfdZfAEMZnbeBJQRXCCiDUAQlz56g==,iv:zsWDE/qIbf+lHDHarydOOQUPHscxqVqEETVTi6ZP6PE=,tag:lH9GsnxHjNS/cNyiK18VMg==,type:str]
                 auth:
-                    providers:
-                        github:
-                            development:
-                                clientSecret: ENC[AES256_GCM,data:lN6babWr66Qj2+/e1iK6xgQJrEfNYuZsyyKT5iUK+socJJXPZ5FouA==,iv:SAqJorA+CTT6nuRYah9C5zMO0qR765AQ5CaPzQoRHNo=,tag:3pm/Z/3+wLmaSGjUPV2rkw==,type:str]
+                  providers:
+                    github:
+                      development:
+                        clientSecret: ENC[AES256_GCM,data:lN6babWr66Qj2+/e1iK6xgQJrEfNYuZsyyKT5iUK+socJJXPZ5FouA==,iv:SAqJorA+CTT6nuRYah9C5zMO0qR765AQ5CaPzQoRHNo=,tag:3pm/Z/3+wLmaSGjUPV2rkw==,type:str]
                 techdocs:
                     publisher:
                         azureBlobStorage:
