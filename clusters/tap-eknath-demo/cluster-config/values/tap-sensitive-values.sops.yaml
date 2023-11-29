@@ -7,9 +7,11 @@ tap_install:
                         - host: ENC[AES256_GCM,data:mIWem1guBVeRAg==,iv:9dCc2Wbq84B+JUlAyntoxkfKbL12RtNEFeVR4vWInP0=,tag:MZTspzHqQisf4/TGgpRWOg==,type:str]
                           token: ENC[AES256_GCM,data:HQX5J0ndpHQDzhh/nTkKkC3S1SfdZfAEMZnbeBJQRXCCiDUAQlz56g==,iv:zsWDE/qIbf+lHDHarydOOQUPHscxqVqEETVTi6ZP6PE=,tag:lH9GsnxHjNS/cNyiK18VMg==,type:str]
                 auth:
+                    environment: ENC[AES256_GCM,data:S1147iHM6P9JKIw=,iv:EqHhPlcUvohk5CFJxbN/6J/z9Ou8loKF+PJ3buJdjks=,tag:nUudi2xPqqnWzmGUv95zAA==,type:str]
                     providers:
                         github:
                             development:
+                                clientId: ENC[AES256_GCM,data:UxDUBUiGr11MPY7GP3wHtxX0khc=,iv:AbJ6pCeC8+g8RFkEgs10BAzZA/mDwvyPhha22ZF4foE=,tag:0VzqRFMBvQChGQo/qUdRdw==,type:str]
                                 clientSecret: ENC[AES256_GCM,data:lN6babWr66Qj2+/e1iK6xgQJrEfNYuZsyyKT5iUK+socJJXPZ5FouA==,iv:SAqJorA+CTT6nuRYah9C5zMO0qR765AQ5CaPzQoRHNo=,tag:3pm/Z/3+wLmaSGjUPV2rkw==,type:str]
                 techdocs:
                     publisher:
@@ -79,8 +81,8 @@ sops:
             T1NDOEUyYWtzT1ZkNVZjYVlZNm9IVGsKYaeKgaUL+4LiZfyqF3R8wXV8WYh6NaPS
             PBhV7btxJqabQXaeHBa//G8OMNBHpu2zPI7mh8iGmYxo0LrGKtg5NA==
             -----END AGE ENCRYPTED FILE-----
-    lastmodified: "2023-11-29T11:33:12Z"
-    mac: ENC[AES256_GCM,data:5yRd5p/lATTbvuiGDcevhy0ZsmB7vKiBI/dWzZ5c58V+ceMeU8nou7rC1axXWELVhpf+YJqgKgCFIi7Q7HcV366m+bW6uxf0ACvz3WrmcNWW14alCfTW60kZKhzDFpfiVABe/8E4ZczI/KWVIuz3tGwRjNM+lYK6jQP4xP5Gc1U=,iv:s8NTFogRFJ8S0A5pUTjNX7vVBVxp2106yItyo83fCfM=,tag:FdhfugDATy02WyQsigHyZw==,type:str]
+    lastmodified: "2023-11-29T11:36:33Z"
+    mac: ENC[AES256_GCM,data:H1nVxuqCCx31DPEMHVH16pARiPXcHBlUzLqT6E+BkxD8d+FxO1cQ1Gp30aXb0aebfDWtmE3e8OgF4UIuI658eWSnVy644MGSh/n8KwIfAWwk0OjVH6eFBFpWQLZbhnjeL9OrlM5bCzlv1LF19T2fiR2uDwkstFWvrgEt+DhLWG4=,iv:XILXrzrPadOypvyiaRFC7WRmSbP/YsAf8C2gRPsSclw=,tag:rDH0aaZqAOM/4q2Ub+nYEg==,type:str]
     pgp: []
     unencrypted_suffix: _unencrypted
     version: 3.7.3
