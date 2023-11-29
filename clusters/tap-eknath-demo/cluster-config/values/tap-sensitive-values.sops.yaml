@@ -6,6 +6,11 @@ tap_install:
                     github:
                         - host: ENC[AES256_GCM,data:mIWem1guBVeRAg==,iv:9dCc2Wbq84B+JUlAyntoxkfKbL12RtNEFeVR4vWInP0=,tag:MZTspzHqQisf4/TGgpRWOg==,type:str]
                           token: ENC[AES256_GCM,data:HQX5J0ndpHQDzhh/nTkKkC3S1SfdZfAEMZnbeBJQRXCCiDUAQlz56g==,iv:zsWDE/qIbf+lHDHarydOOQUPHscxqVqEETVTi6ZP6PE=,tag:lH9GsnxHjNS/cNyiK18VMg==,type:str]
+                auth:
+                    providers:
+                        github:
+                            development:
+                                clientSecret: ENC[AES256_GCM,data:lN6babWr66Qj2+/e1iK6xgQJrEfNYuZsyyKT5iUK+socJJXPZ5FouA==,iv:SAqJorA+CTT6nuRYah9C5zMO0qR765AQ5CaPzQoRHNo=,tag:3pm/Z/3+wLmaSGjUPV2rkw==,type:str]
                 techdocs:
                     publisher:
                         azureBlobStorage:
@@ -74,8 +79,8 @@ sops:
             T1NDOEUyYWtzT1ZkNVZjYVlZNm9IVGsKYaeKgaUL+4LiZfyqF3R8wXV8WYh6NaPS
             PBhV7btxJqabQXaeHBa//G8OMNBHpu2zPI7mh8iGmYxo0LrGKtg5NA==
             -----END AGE ENCRYPTED FILE-----
-    lastmodified: "2023-11-09T10:36:05Z"
-    mac: ENC[AES256_GCM,data:NiPUw/E2FXcfOHuWYnHtRZzNDWi9Z8tp5FtvuHmLaauBjsIHVT3UljZY63RXzKhgXHVlL2n3rNONJBbUtdU+SpDBcYcnIA//g8f/18aMc/FvSF/rdcxWa9fjzY+PgIinZXTDlhiLNWEnRbgzxXtc2FU1p4jSl8Sza8EzFxwMfis=,iv:dB2En7JD6cqz04bcbEGgMgjfj6BDA3SV4tAAUgwXaCM=,tag:hR7Fd1PadJYwIkWlW87dew==,type:str]
+    lastmodified: "2023-11-29T11:26:21Z"
+    mac: ENC[AES256_GCM,data:wLHerALgaEjPoNa0G9QJaU04UZil8tayJJlx5m3IrZC3DSO0dh0tDgcKWNqK1qlpSsXRXE7yVTbaOeJvIHz98XJBW1CJ3Z1b28WJq/gm2ctYZmCptQX0MwOeNwQLqPnbcmEv6U4LNt81zMEQPzhcZGaW7Mcpk35Z/uc6mQLknhk=,iv:2LLH8wqqlN1vlWyJG6rTv59jg4uaXisAxlf70bxq+YY=,tag:T5wmw6EM52kxYR164sxrzg==,type:str]
     pgp: []
     unencrypted_suffix: _unencrypted
     version: 3.7.3
