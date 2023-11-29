@@ -148,7 +148,13 @@ tap_install:
 #          secretName: tap-gui-secret
        app_config:
          auth:
-           allowGuestAccess: true
+           environment: development
+           providers:
+             github:
+               development:
+                 clientId: Iv1.654f81a92154b3a7
+                 clientSecret: 10fe225438e45c9b66ab0be8a179e03b8fdc10ca
+#           allowGuestAccess: true
          techdocs:
             builder: 'external'
             publisher:
