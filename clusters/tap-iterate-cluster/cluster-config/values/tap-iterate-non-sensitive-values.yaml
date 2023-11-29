@@ -68,7 +68,5 @@ tap_install:
 #        namespace: tap-install
 #        create_export: true
     cnrs:
-#      default_tls_secret: tap-workload/ca-cert
-#      domain_template: "{{.Name}}.{{.Namespace}}.{{.Domain}}"
       domain_template: "{{.Name}}.{{.Namespace}}.{{.Domain}}"
-      domain_name: demo.vmwareexploreindia.com
+      domain_name: "demo.vmwareexploreindia.com"
