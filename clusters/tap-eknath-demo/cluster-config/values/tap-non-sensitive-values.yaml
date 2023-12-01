@@ -27,7 +27,7 @@ tap_install:
       ingress_domain: "demo.vmwareexploreindia.com"
 #      ca_cert_data: |
       image_registry:
-        project_path: "exploreindiatapsolreg.azurecr.io/tap170/tap-packages"
+        project_path: "exploreindiatapsolreg.azurecr.io/tap171/tap-packages"
         secret: 
           name: "buildservice-creds"
           namespace: "tap-install"
@@ -35,7 +35,7 @@ tap_install:
     buildservice:
       injected_sidecar_support: true
       exclude_dependencies: true
-      kp_default_repository: "exploreindiatapsolreg.azurecr.io/tap170/tap-packages/build-service"
+      kp_default_repository: "exploreindiatapsolreg.azurecr.io/tap171/tap-packages/build-service"
       kp_default_repository_secret:
         name: "buildservice-creds"
         namespace: "tap-install"
@@ -100,7 +100,7 @@ tap_install:
 #          template: blob-source-scan-template
       registry:
         server: "exploreindiatapsolreg.azurecr.io"
-        repository: "tap170/tap-packages/build-service"
+        repository: "tap171/tap-packages/build-service"
       gitops:
           server_address: https://github.com/
           repository_owner: explore-india-booth
