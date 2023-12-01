@@ -203,8 +203,6 @@ tap_install:
                target: https://github.com/explore-india-booth/acme-fitness-store/blob/main/apps/acme-cart/catalog/catalog-info.yaml
              - type: url
                target: https://github.com/making/rest-service/blob/main/catalog/catalog-info.yaml
-             - type: url
-               target: https://github.com/timosalm/backstage-demo/blob/main/tanzu-developer-portal-configurator/catalog/catalog-info.yaml
     scanning:
       metadataStore:
         exports: # Disable embedded integration since it's deprecated
