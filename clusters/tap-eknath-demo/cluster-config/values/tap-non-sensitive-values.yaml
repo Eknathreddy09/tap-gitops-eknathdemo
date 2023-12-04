@@ -209,6 +209,8 @@ tap_install:
                target: https://github.com/making/rest-service/blob/main/catalog/catalog-info.yaml
              - type: url
                target: https://github.com/timosalm/backstage-demo/blob/main/tanzu-developer-portal-configurator/catalog/catalog-info.yaml
+             - type: url
+               target: https://github.com/Eknathreddy09/tanzu-java-web-app/blob/main/catalog/catalog-info-sonar.yaml
     scanning:
       metadataStore:
         exports: # Disable embedded integration since it's deprecated
