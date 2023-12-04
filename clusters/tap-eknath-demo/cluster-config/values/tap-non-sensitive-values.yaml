@@ -150,7 +150,7 @@ tap_install:
        app_config:
          sonarqube:
            baseUrl: 'http://40.64.92.68'
-           apiKey: 'sqp_07781e02801676b0868158a2d5783636ceaff545'
+           apiKey: 'sqp_40fc84d66a2043f7ae2dd5f1fc4b85f95c0173d7'
 #           allowGuestAccess: true
          techdocs:
             builder: 'external'
