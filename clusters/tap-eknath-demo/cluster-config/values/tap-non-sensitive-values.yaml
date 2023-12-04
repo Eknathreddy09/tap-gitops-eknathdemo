@@ -148,6 +148,9 @@ tap_install:
 #          namespace: tap-gui
 #          secretName: tap-gui-secret
        app_config:
+         sonarqube:
+           baseUrl: 'http://40.64.92.68'
+           apiKey: 'sqa_3cec2eac33109265251cae4160e4345508bee16f'
 #           allowGuestAccess: true
          techdocs:
             builder: 'external'
