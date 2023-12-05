@@ -10,6 +10,8 @@ tap_install:
       secrets:
       - name: tdp-app-image-overlay-secret
       - name: tdp-app-image-overlay-secret-sonar
+      - name: tdp-app-image-overlay-secret-githubactions
+      - name: tdp-app-image-overlay-secret-grafana
     - name: cartographer
       secrets:
       - name: patch-cartographer-convention-controller
