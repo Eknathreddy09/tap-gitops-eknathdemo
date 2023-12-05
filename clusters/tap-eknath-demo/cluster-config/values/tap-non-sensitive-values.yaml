@@ -11,7 +11,8 @@ tap_install:
 #      - name: tdp-app-image-overlay-secret
 #      - name: tdp-app-image-overlay-secret-sonar
 #      - name: tdp-app-image-overlay-secret-githubactions
-      - name: tdp-app-image-overlay-secret-grafana
+#      - name: tdp-app-image-overlay-secret-grafana
+       - name: tdp-app-image-overlay-secret-all
 #      - name: tdp-app-image-overlay-secret-prom
     - name: cartographer
       secrets:
@@ -156,23 +157,23 @@ tap_install:
              target: http://grafana.vmwareexploreindia.com/
              headers:
                Authorization: 'Bearer glsa_z3RdVu88h1PGVXOore0O51kiRBf4Zdk0_b5bbf369'
-#           '/prometheus/api': 
-#              target: http://52.143.94.196:9090/api/v1/
-#              changeOrigin: true
-#              secure: false
-#         prometheus:
-#           proxyPath: /prometheus/api
-#           uiUrl: http://52.143.94.196:9090
+           '/prometheus/api': 
+              target: http://52.143.94.196:9090/api/v1/
+              changeOrigin: true
+              secure: false
+         prometheus:
+           proxyPath: /prometheus/api
+           uiUrl: http://52.143.94.196:9090
          grafana:
            domain: vmwareexploreindia.com
            unifiedAlerting: true
-#         integrations:
-#           github:
-#           - host: 'github.com'
-#             apiBaseUrl: 'https://api.github.com'
-#         sonarqube:
-#           baseUrl: 'http://40.64.92.68'
-#           apiKey: 'sqp_194e46f44cbdf814d146fa20674df89fc6c6a920'
+         integrations:
+           github:
+           - host: 'github.com'
+             apiBaseUrl: 'https://api.github.com'
+         sonarqube:
+           baseUrl: 'http://40.64.92.68'
+           apiKey: 'sqp_194e46f44cbdf814d146fa20674df89fc6c6a920'
 #           allowGuestAccess: true
          techdocs:
             builder: 'external'
