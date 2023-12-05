@@ -12,6 +12,7 @@ tap_install:
       - name: tdp-app-image-overlay-secret-sonar
       - name: tdp-app-image-overlay-secret-githubactions
       - name: tdp-app-image-overlay-secret-grafana
+      - name: tdp-app-image-overlay-secret-prom
     - name: cartographer
       secrets:
       - name: patch-cartographer-convention-controller
@@ -155,6 +156,13 @@ tap_install:
              target: http://52.143.90.156/
              headers:
                Authorization: 'Bearer glsa_z3RdVu88h1PGVXOore0O51kiRBf4Zdk0_b5bbf369'
+           '/prometheus/api': 
+              target: http://52.143.94.196:9090/api/v1/
+              changeOrigin: true
+              secure: false
+         prometheus:
+           proxyPath: /prometheus/api
+           uiUrl: http://52.143.94.196:9090
          grafana:
            domain: http://52.143.90.156/
            unifiedAlerting: true
