@@ -151,21 +151,21 @@ tap_install:
 #          namespace: tap-gui
 #          secretName: tap-gui-secret
        app_config:
-#         proxy:
-#           '/grafana/api':
-#             target: http://52.143.90.156/
-#             headers:
-#               Authorization: 'Bearer glsa_z3RdVu88h1PGVXOore0O51kiRBf4Zdk0_b5bbf369'
-#           '/prometheus/api': 
-#              target: http://52.143.94.196:9090/api/v1/
-#              changeOrigin: true
-#              secure: false
-#         prometheus:
-#           proxyPath: /prometheus/api
-#           uiUrl: http://52.143.94.196:9090
-#         grafana:
-#           domain: http://52.143.90.156/
-#           unifiedAlerting: true
+         proxy:
+           '/grafana/api':
+             target: http://52.143.90.156/
+             headers:
+               Authorization: 'Bearer glsa_z3RdVu88h1PGVXOore0O51kiRBf4Zdk0_b5bbf369'
+           '/prometheus/api': 
+              target: http://52.143.94.196:9090/api/v1/
+              changeOrigin: true
+              secure: false
+         prometheus:
+           proxyPath: /prometheus/api
+           uiUrl: http://52.143.94.196:9090
+         grafana:
+           domain: http://52.143.90.156/
+           unifiedAlerting: true
 #         integrations:
 #           github:
 #           - host: 'github.com'
