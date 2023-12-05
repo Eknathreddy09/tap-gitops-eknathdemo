@@ -9,7 +9,7 @@ tap_install:
     - name: tap-gui
       secrets:
       - name: tdp-app-image-overlay-secret
-      - name: tdp-app-image-overlay-secret-sonar
+#      - name: tdp-app-image-overlay-secret-sonar
 #      - name: tdp-app-image-overlay-secret-githubactions
 #      - name: tdp-app-image-overlay-secret-grafana
 #      - name: tdp-app-image-overlay-secret-prom
@@ -170,9 +170,9 @@ tap_install:
 #           github:
 #           - host: 'github.com'
 #             apiBaseUrl: 'https://api.github.com'
-         sonarqube:
-           baseUrl: 'http://40.64.92.68'
-           apiKey: 'sqp_194e46f44cbdf814d146fa20674df89fc6c6a920'
+#         sonarqube:
+#           baseUrl: 'http://40.64.92.68'
+#           apiKey: 'sqp_194e46f44cbdf814d146fa20674df89fc6c6a920'
 #           allowGuestAccess: true
          techdocs:
             builder: 'external'
