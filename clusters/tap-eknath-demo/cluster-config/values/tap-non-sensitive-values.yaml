@@ -148,6 +148,10 @@ tap_install:
 #          namespace: tap-gui
 #          secretName: tap-gui-secret
        app_config:
+         integrations:
+           github:
+           - host: 'github.com'
+             apiBaseUrl: 'https://api.github.com'
          sonarqube:
            baseUrl: 'http://40.64.92.68'
            apiKey: 'sqp_194e46f44cbdf814d146fa20674df89fc6c6a920'
