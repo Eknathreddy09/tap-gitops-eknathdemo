@@ -160,9 +160,9 @@ tap_install:
               target: https://apidocs.snyk.io/
               headers: 
                 User-Agent: tech-services/backstage-plugin/1.0
-                Authorization: 'token 639c3205-176a-42f7-b5eb-b3d8c8877ed0'
-              pathRewrite:
-                '^/proxy/snyk/': '/'
+                Authorization: '639c3205-176a-42f7-b5eb-b3d8c8877ed0'
+#              pathRewrite:
+#                '^/proxy/snyk/': '/'
          prometheus:
            proxyPath: /prometheus/api
            uiUrl: http://52.143.94.196:9090
