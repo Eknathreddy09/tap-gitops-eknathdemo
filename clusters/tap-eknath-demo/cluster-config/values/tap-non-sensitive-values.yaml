@@ -159,7 +159,7 @@ tap_install:
            '/snyk':
               target: https://api.snyk.io/
               headers: 
-                Authorization: token 6c3b6d8f-9bcc-4efe-8b26-4134ba65d9be
+                Authorization: '2f3fe75f-2b36-48eb-a80e-c55fc9980e21'
          prometheus:
            proxyPath: /prometheus/api
            uiUrl: http://52.143.94.196:9090
