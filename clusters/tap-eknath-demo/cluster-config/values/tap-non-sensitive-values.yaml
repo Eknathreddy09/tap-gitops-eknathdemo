@@ -163,7 +163,7 @@ tap_install:
                 Authorization:
                   $env: 2f3fe75f-2b36-48eb-a80e-c55fc9980e21
               pathRewrite:
-               '^/api/proxy/snyk/': '/'
+               '^/proxy/snyk/': '/'
          prometheus:
            proxyPath: /prometheus/api
            uiUrl: http://52.143.94.196:9090
