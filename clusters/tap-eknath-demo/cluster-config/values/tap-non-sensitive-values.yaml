@@ -8,12 +8,7 @@ tap_install:
       - name: ootb-supply-chain-testing-scanning-add-source-scanner
     - name: tap-gui
       secrets:
-#      - name: tdp-app-image-overlay-secret
-#      - name: tdp-app-image-overlay-secret-sonar
-#      - name: tdp-app-image-overlay-secret-githubactions
-#      - name: tdp-app-image-overlay-secret-grafana
        - name: tdp-app-image-overlay-secret-all
-#      - name: tdp-app-image-overlay-secret-prom
     - name: cartographer
       secrets:
       - name: patch-cartographer-convention-controller
@@ -161,6 +156,10 @@ tap_install:
               target: http://52.143.94.196:9090/api/v1/
               changeOrigin: true
               secure: false
+           '/snyk':
+              target: https://api.snyk.io/
+              headers: 
+                Authorization: token 6c3b6d8f-9bcc-4efe-8b26-4134ba65d9be
          prometheus:
            proxyPath: /prometheus/api
            uiUrl: http://52.143.94.196:9090
