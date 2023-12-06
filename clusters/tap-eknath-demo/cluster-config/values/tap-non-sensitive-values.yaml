@@ -157,9 +157,9 @@ tap_install:
               changeOrigin: true
               secure: false
            '/sonarqube':
-              target: http://sonarqube.demo.vmwareexploreindia.com/api
+              target: https://sonarcloud.io/api
               allowedMethods: ['GET']
-              auth: "sqp_194e46f44cbdf814d146fa20674df89fc6c6a920"
+              auth: "a3184c5bf624b2bff76583cc462abb73ce2e138c"
            '/snyk':
               target: https://apidocs.snyk.io/
               headers: 
@@ -178,8 +178,8 @@ tap_install:
            - host: 'github.com'
              apiBaseUrl: 'https://api.github.com'
          sonarqube:
-           baseUrl: 'http://sonarqube.demo.vmwareexploreindia.com'
-           apiKey: 'sqp_194e46f44cbdf814d146fa20674df89fc6c6a920'
+           baseUrl: 'https://sonarcloud.io'
+           apiKey: 'a3184c5bf624b2bff76583cc462abb73ce2e138c'
 #           allowGuestAccess: true
          techdocs:
             builder: 'external'
