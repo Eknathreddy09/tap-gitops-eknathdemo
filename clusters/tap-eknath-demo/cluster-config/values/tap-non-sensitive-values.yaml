@@ -161,7 +161,7 @@ tap_install:
               headers: 
                 User-Agent: tech-services/backstage-plugin/1.0
                 Authorization:
-                  $env: cc7556cb-9b02-4b8d-b06d-536d7083d1a1
+                  $env: 639c3205-176a-42f7-b5eb-b3d8c8877ed0
               pathRewrite:
                '^/proxy/snyk/': '/'
          prometheus:
