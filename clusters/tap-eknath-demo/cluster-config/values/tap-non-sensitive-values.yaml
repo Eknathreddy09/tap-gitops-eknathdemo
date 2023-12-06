@@ -161,8 +161,8 @@ tap_install:
               headers: 
                 User-Agent: tech-services/backstage-plugin/1.0
                 Authorization: '639c3205-176a-42f7-b5eb-b3d8c8877ed0'
-#              pathRewrite:
-#                '^/proxy/snyk/': '/'
+              pathRewrite:
+                '^/proxy/snyk/': '/'
          prometheus:
            proxyPath: /prometheus/api
            uiUrl: http://52.143.94.196:9090
