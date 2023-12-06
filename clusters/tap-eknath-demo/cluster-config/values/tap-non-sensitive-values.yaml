@@ -156,6 +156,10 @@ tap_install:
               target: http://52.143.94.196:9090/api/v1/
               changeOrigin: true
               secure: false
+           '/sonarqube':
+              target: http://40.64.92.68/api
+              allowedMethods: ['GET']
+              auth: "sqp_194e46f44cbdf814d146fa20674df89fc6c6a920"
            '/snyk':
               target: https://apidocs.snyk.io/
               headers: 
