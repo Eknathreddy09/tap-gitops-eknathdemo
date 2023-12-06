@@ -157,7 +157,7 @@ tap_install:
               changeOrigin: true
               secure: false
            '/snyk':
-              target: https://api.snyk.io/
+              target: https://apidocs.snyk.io/
               headers: 
                 User-Agent: tech-services/backstage-plugin/1.0
                 Authorization: 'token 639c3205-176a-42f7-b5eb-b3d8c8877ed0'
