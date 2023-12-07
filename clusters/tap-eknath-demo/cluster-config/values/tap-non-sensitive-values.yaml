@@ -9,6 +9,7 @@ tap_install:
     - name: tap-gui
       secrets:
        - name: tdp-app-image-overlay-secret-all
+       - name: secret/tdp-app-image-overlay-secret-withradar
     - name: cartographer
       secrets:
       - name: patch-cartographer-convention-controller
