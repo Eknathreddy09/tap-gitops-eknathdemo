@@ -150,8 +150,8 @@ tap_install:
          proxy:
            '/grafana/api':
              target: http://grafana.vmwareexploreindia.com/
-#             headers:
-#               Authorization: 'Bearer glsa_z3RdVu88h1PGVXOore0O51kiRBf4Zdk0_b5bbf369'
+             headers:
+               Authorization: 'Bearer glsa_z3RdVu88h1PGVXOore0O51kiRBf4Zdk0_b5bbf369'
            '/prometheus/api': 
               target: http://52.143.94.196:9090/api/v1/
               changeOrigin: true
@@ -159,12 +159,16 @@ tap_install:
            '/sonarqube':
               target: https://sonarcloud.io/api
               allowedMethods: ['GET']
-#             auth: "a3184c5bf624b2bff76583cc462abb73ce2e138c"
+              auth: "a3184c5bf624b2bff76583cc462abb73ce2e138c"
+           '/jenkins/api':
+              baseUrl: http://jenkins.demo.vmwareexploreindia.com:8080/
+              username: jenkins
+              apiKey: 118b38390057e3386ecd1d8a903a1783a5
            '/snyk':
               target: https://apidocs.snyk.io/
-#              headers: 
-#                User-Agent: tech-services/backstage-plugin/1.0
-#                Authorization: 'token 639c3205-176a-42f7-b5eb-b3d8c8877ed0'
+              headers: 
+                User-Agent: tech-services/backstage-plugin/1.0
+                Authorization: 'token 639c3205-176a-42f7-b5eb-b3d8c8877ed0'
               pathRewrite:
                 '^/proxy/snyk/': '/'
          prometheus:
