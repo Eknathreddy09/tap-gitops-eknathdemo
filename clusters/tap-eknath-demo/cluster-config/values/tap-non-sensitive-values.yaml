@@ -150,8 +150,8 @@ tap_install:
          proxy:
            '/grafana/api':
              target: http://grafana.vmwareexploreindia.com/
-             headers:
-               Authorization: 'Bearer glsa_z3RdVu88h1PGVXOore0O51kiRBf4Zdk0_b5bbf369'
+#             headers:
+#               Authorization: 'Bearer glsa_z3RdVu88h1PGVXOore0O51kiRBf4Zdk0_b5bbf369'
            '/prometheus/api': 
               target: http://52.143.94.196:9090/api/v1/
               changeOrigin: true
@@ -159,12 +159,12 @@ tap_install:
            '/sonarqube':
               target: https://sonarcloud.io/api
               allowedMethods: ['GET']
-              auth: "a3184c5bf624b2bff76583cc462abb73ce2e138c"
+#             auth: "a3184c5bf624b2bff76583cc462abb73ce2e138c"
            '/snyk':
               target: https://apidocs.snyk.io/
-              headers: 
+#              headers: 
 #                User-Agent: tech-services/backstage-plugin/1.0
-                Authorization: 'token 639c3205-176a-42f7-b5eb-b3d8c8877ed0'
+#                Authorization: 'token 639c3205-176a-42f7-b5eb-b3d8c8877ed0'
               pathRewrite:
                 '^/proxy/snyk/': '/'
          prometheus:
@@ -173,15 +173,15 @@ tap_install:
          grafana:
            domain: vmwareexploreindia.com
            unifiedAlerting: true
-         openai: 
-           apiKey: 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
+#         openai: 
+#           apiKey: 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
          integrations:
            github:
            - host: 'github.com'
              apiBaseUrl: 'https://api.github.com'
          sonarqube:
            baseUrl: 'https://sonarcloud.io'
-           apiKey: 'a3184c5bf624b2bff76583cc462abb73ce2e138c'
+#           apiKey: 'a3184c5bf624b2bff76583cc462abb73ce2e138c'
 #           allowGuestAccess: true
          techdocs:
             builder: 'external'
