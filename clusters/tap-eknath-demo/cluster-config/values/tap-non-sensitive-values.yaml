@@ -89,7 +89,7 @@ tap_install:
             - sync-git
     excluded_packages:
       - workshops.learningcenter.tanzu.vmware.com
-#      - crossplane.tanzu.vmware.com
+      - crossplane.tanzu.vmware.com
     supply_chain: testing_scanning
     ootb_supply_chain_testing_scanning:
       scanning:
