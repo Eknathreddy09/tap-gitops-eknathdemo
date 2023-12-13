@@ -160,10 +160,10 @@ tap_install:
               target: https://sonarcloud.io/api
               allowedMethods: ['GET']
               auth: "a3184c5bf624b2bff76583cc462abb73ce2e138c"
-           '/jenkins/api':
-              baseUrl: http://jenkins.demo.vmwareexploreindia.com:8080/
-              username: jenkins
-              apiKey: 118b38390057e3386ecd1d8a903a1783a5
+#           '/jenkins/api':
+#              baseUrl: http://jenkins.demo.vmwareexploreindia.com:8080/
+#              username: jenkins
+#              apiKey: 118b38390057e3386ecd1d8a903a1783a5
            '/snyk':
               target: https://apidocs.snyk.io/
               headers: 
