@@ -153,7 +153,7 @@ tap_install:
              headers:
                Authorization: 'Bearer glsa_z3RdVu88h1PGVXOore0O51kiRBf4Zdk0_b5bbf369'
            '/prometheus/api': 
-              target: http://52.143.94.196:9090/api/v1/
+              target: http://40.64.88.98:9090/api/v1/
               changeOrigin: true
               secure: false
            '/sonarqube':
@@ -169,7 +169,7 @@ tap_install:
                 '^/proxy/snyk/': '/'
          prometheus:
            proxyPath: /prometheus/api
-           uiUrl: http://52.143.94.196:9090
+           uiUrl: http://40.64.88.98:9090
          grafana:
            domain: vmwareexploreindia.com
            unifiedAlerting: true
