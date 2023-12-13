@@ -11,6 +11,10 @@ tap_install:
                     /snyk:
                         headers:
                             Authorization: ENC[AES256_GCM,data:TwWaELqPV3/LYLbWrbsm20TAgzqcTrZqG2gWRNnM08UX1eunS7AptUAg,iv:B/GfQeQy5/7daYS0tC/9fQzn0wkLEUHqNaq1A5WE1BQ=,tag:e4n0vU3917/CErDM3NJTXQ==,type:str]
+                    /jenkins/api:
+                        baseUrl: ENC[AES256_GCM,data:XMsddcIQI2H8KeVzIBMlYUHw1R2ilTGHqRquK/VFMKaTnFke75BwUxGUlfvPZcHd,iv:FWD+SAr0fjjwERcXUG3Cxi8irTDjXk3JgeqsBd/VWqU=,tag:OQwiHZ8VEYtSJ3hmZQQu6A==,type:str]
+                        username: ENC[AES256_GCM,data:shAUVkHf6w==,iv:R4AIMppt6pm91AvS9ltj3lxGf1vXCRz0MLoRr7sOp4Y=,tag:nO7CsFc3NQCWsJRWinFqiw==,type:str]
+                        apiKey: ENC[AES256_GCM,data:rQ6GTw+e0szwUCfk38OCLccp2mgVSs0mFpceUj6Tp+z0mA==,iv:y/MDQc1B+1vZ44xLrXJVMzq86wup1UOew9Od4wO3jTA=,tag:Szu9JP3c/8L36QwiB69hnw==,type:str]
                 openai:
                     apiKey: ENC[AES256_GCM,data:ZL2nasbUsK0GZ2Q870+PADBg+BMo7OwaeRBFyc7UAWUoCMKGSRNSuEgcqZjtNaoT0lqV,iv:kIKF7lYQzRMgXYvAB9YoGuz3B4YJTOF2hywqsErsi2k=,tag:rEYjfqVnrb15cIhje8eaQg==,type:str]
                 sonarqube:
@@ -94,8 +98,8 @@ sops:
             T1NDOEUyYWtzT1ZkNVZjYVlZNm9IVGsKYaeKgaUL+4LiZfyqF3R8wXV8WYh6NaPS
             PBhV7btxJqabQXaeHBa//G8OMNBHpu2zPI7mh8iGmYxo0LrGKtg5NA==
             -----END AGE ENCRYPTED FILE-----
-    lastmodified: "2023-12-13T05:56:21Z"
-    mac: ENC[AES256_GCM,data:Y2FdZ8i5a2ok0hPSbMbGWYQiwR2gMX0UVc+xNO3/5dqHCXkNNGs8RFURuUqlR6HvChCkXZqyO3Pz34v43E56RC3NsOL8W8BMtHpslnhyi/80ngciPUhuTUh6c0goc66LxwQbqdi/WSdiQQxvKhY03EMXa6JZZ2F5vR20Ls+txfI=,iv:UZAEjAEpJ0fDdO5btvDG/c3vXtkGoWE5FXyW008yUp8=,tag:ikHy69Rs/z2fUpfGEerW8Q==,type:str]
+    lastmodified: "2023-12-13T06:03:49Z"
+    mac: ENC[AES256_GCM,data:xZMz94U46e8JxRtN48cF+SnIQ7mry1UhDofV4+06Uhmt01LxqtUiFjoID/4YPjRMEMf6LQNMmVR8b5ZvSBxSjcvKFVH4kTpTz4YVEMUavljFZN1MXHrAebddy/3sYbd0P1L0aH0VdynFbnNCFdk2cml396RUSEWcfAzDkdx12Ic=,iv:SYy5ELUAUKOKVdesiByvd0HXQ/P2DDxuJU9pMISz7UI=,tag:J0ppgHX/hsi3CqQ+vog7vA==,type:str]
     pgp: []
     unencrypted_suffix: _unencrypted
     version: 3.7.3
