@@ -22,7 +22,7 @@ tap_install:
       secrets:
       - name: patch-spring-conventions
     shared:
-      kubernetes_version: "1.26.6"
+      kubernetes_version: "1.28.3"
       ingress_issuer: "letsencrypt-prod"
       ingress_domain: "demo.vmwareexploreindia.com"
 #      ca_cert_data: |
@@ -89,7 +89,6 @@ tap_install:
             - sync-git
     excluded_packages:
       - workshops.learningcenter.tanzu.vmware.com
-      - crossplane.tanzu.vmware.com
     supply_chain: testing_scanning
     ootb_supply_chain_testing_scanning:
       scanning:
@@ -101,7 +100,7 @@ tap_install:
 #          template: blob-source-scan-template
       registry:
         server: "exploreindiatapsolreg.azurecr.io"
-        repository: "tap171/tap-packages/build-service"
+        repository: "tap172/tap-packages/build-service"
       gitops:
           server_address: https://github.com/
           repository_owner: explore-india-booth
