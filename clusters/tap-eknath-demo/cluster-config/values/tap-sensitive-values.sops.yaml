@@ -11,14 +11,14 @@ tap_install:
                     /snyk:
                         headers:
                             Authorization: ENC[AES256_GCM,data:TwWaELqPV3/LYLbWrbsm20TAgzqcTrZqG2gWRNnM08UX1eunS7AptUAg,iv:B/GfQeQy5/7daYS0tC/9fQzn0wkLEUHqNaq1A5WE1BQ=,tag:e4n0vU3917/CErDM3NJTXQ==,type:str]
+                    /jenkins/api:
+                        baseurl: ENC[AES256_GCM,data:H81gBD8gtbRvoxJZ0m7yE1R9VMs2XFPVIeGHXSSojk4kZopjCVVkNJcArUuVJaw=,iv:HxwuXXctpKmU9qageX0X9fDB0eMLqsxvQtKejvY92q8=,tag:RFs5mKeBwwF3gx2pb/q6mQ==,type:str]
+                        username: ENC[AES256_GCM,data:oYNQ0ov+Gg==,iv:DeLlo4gbQ5P4OQcj+7G9k93pWB/k+CJcJoNC0TzWZFc=,tag:mKKIwuIcaXtM+ehC6yPgkA==,type:str]
+                        apiKey: ENC[AES256_GCM,data:23Pz1obc2JYjEltD/7S7DyiWRu848SU3/xdNX+3UPGl1jw==,iv:Ywz2XSb9ZLmV/09Hux4+5ay/YF+2erlDled/fY///ew=,tag:zIEBJJsEWFKb9LvotdO3Iw==,type:str]
                 openai:
                     apiKey: ENC[AES256_GCM,data:ZL2nasbUsK0GZ2Q870+PADBg+BMo7OwaeRBFyc7UAWUoCMKGSRNSuEgcqZjtNaoT0lqV,iv:kIKF7lYQzRMgXYvAB9YoGuz3B4YJTOF2hywqsErsi2k=,tag:rEYjfqVnrb15cIhje8eaQg==,type:str]
                 sonarqube:
                     apiKey: ENC[AES256_GCM,data:s9JCF6A3pxlth+G8sSpiWSqqBn/rAzy1q+74pGJaEQgkEqdqCR8W3g==,iv:/j6hM4x8Mdm5Pr5uCpfVoVvAPOEX9+FO8vBpBRkoFO8=,tag:T7zSBfDUpFz+smQw5bS8IQ==,type:str]
-                jenkins:
-                    baseurl: ENC[AES256_GCM,data:Z5P8VSDQY1Mm4HuyuIBGI6q7aRPOK6SfSdpaDU1e1MVIFnHi+Mi+oKg3gf5E7Wk=,iv:sZZB2dLQ7q6JqScNnAIxcJ7El643xxeJ65NdblcdeK0=,tag:z5Upu7eDC6sQVEPBM5SRAQ==,type:str]
-                    username: ENC[AES256_GCM,data:XwiBDu+tAA==,iv:NiyzHq9dn7YQIyIxdbJSI+KYejWqplDlTXYn2ZvkoxU=,tag:4tR6LEndK7ywKgh7BJwSTw==,type:str]
-                    apiKey: ENC[AES256_GCM,data:MPQip8zhVgP0JHu0h+fOL4Xko0nEeVMjq0wFxpOhYZV9CQ==,iv:2NPQ+R5jymrsDe7vqELuqxETJ7C834K2eJesbCt5Z8A=,tag:udRuawV2M0UPp3/juhsZaw==,type:str]
                 integrations:
                     github:
                         - host: ENC[AES256_GCM,data:mIWem1guBVeRAg==,iv:9dCc2Wbq84B+JUlAyntoxkfKbL12RtNEFeVR4vWInP0=,tag:MZTspzHqQisf4/TGgpRWOg==,type:str]
@@ -98,8 +98,8 @@ sops:
             T1NDOEUyYWtzT1ZkNVZjYVlZNm9IVGsKYaeKgaUL+4LiZfyqF3R8wXV8WYh6NaPS
             PBhV7btxJqabQXaeHBa//G8OMNBHpu2zPI7mh8iGmYxo0LrGKtg5NA==
             -----END AGE ENCRYPTED FILE-----
-    lastmodified: "2023-12-13T05:18:18Z"
-    mac: ENC[AES256_GCM,data:zr3/7NPE7YX5Go1wJo3qUeWYUWVR3nJP8E3fYI+88EV/BKAR6K/ZO1ve9esdwxtm7GrJqLlA7f5TnGcbUA9X3NH7YaO/wWkvEi80VCnhXHxsQo94vbUSNwRh+8fB6fuOobR1HWQzOxNWFxNd4HJv4N4Sm/6b8IcETvTj6V3+iCg=,iv:0NFxEOVrd5sHzj4TR+HI8C1mUVkUGGSXHXmI/0jf9B0=,tag:9aiC2KOMF+c/gGFNZe5IzQ==,type:str]
+    lastmodified: "2023-12-13T05:51:08Z"
+    mac: ENC[AES256_GCM,data:zCmVD8/owXCXIB3eshQTB81UnOXLi7/n8IzsSXFA+xfxY+PYZKtQdOo7wXFiWoYDuEy38z6YrucEH576FMIvmnjLWmRjM67EMCE78vXBidzD/EWH33kdgT5VwvKYB4UKI2PoHLcWmLM/x/6hfigJtCUK4v1kFNwPZ1wr7Kaarlw=,iv:szk0v/FOzoYBEvsH5Ao7NPCs9mhRaJuIZxRqHFh0rT8=,tag:NTRgV6q7mayQl9dqi6Nf2Q==,type:str]
     pgp: []
     unencrypted_suffix: _unencrypted
     version: 3.7.3
