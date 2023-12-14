@@ -10,13 +10,13 @@ tap_install:
                     github:
                         - host: ENC[AES256_GCM,data:mIWem1guBVeRAg==,iv:9dCc2Wbq84B+JUlAyntoxkfKbL12RtNEFeVR4vWInP0=,tag:MZTspzHqQisf4/TGgpRWOg==,type:str]
                           token: ENC[AES256_GCM,data:HQX5J0ndpHQDzhh/nTkKkC3S1SfdZfAEMZnbeBJQRXCCiDUAQlz56g==,iv:zsWDE/qIbf+lHDHarydOOQUPHscxqVqEETVTi6ZP6PE=,tag:lH9GsnxHjNS/cNyiK18VMg==,type:str]
-                auth:
-                    environment: ENC[AES256_GCM,data:S1147iHM6P9JKIw=,iv:EqHhPlcUvohk5CFJxbN/6J/z9Ou8loKF+PJ3buJdjks=,tag:nUudi2xPqqnWzmGUv95zAA==,type:str]
-                    providers:
-                        github:
-                            development:
-                                clientId: ENC[AES256_GCM,data:UxDUBUiGr11MPY7GP3wHtxX0khc=,iv:AbJ6pCeC8+g8RFkEgs10BAzZA/mDwvyPhha22ZF4foE=,tag:0VzqRFMBvQChGQo/qUdRdw==,type:str]
-                                clientSecret: ENC[AES256_GCM,data:lN6babWr66Qj2+/e1iK6xgQJrEfNYuZsyyKT5iUK+socJJXPZ5FouA==,iv:SAqJorA+CTT6nuRYah9C5zMO0qR765AQ5CaPzQoRHNo=,tag:3pm/Z/3+wLmaSGjUPV2rkw==,type:str]
+                          #ENC[AES256_GCM,data:Sd0HSzPLTMPrFiXHLKOBZgdwQd1U,iv:tKgeFF825zyxqYzC6EFy2lSrlaTMkIMow7V4HVHESsA=,tag:K6derzFGV5IGl5pRsNAEaA==,type:comment]
+                          #ENC[AES256_GCM,data:YmD12Bx13uXtn6+u3z9ItuqBdjPTILxMqzFlDhTKrgKb7rmYkpERvtauIy8=,iv:3089B/nQKKbLBSj77RI25SvkeHhLmTFFNmkHhB7/Ptc=,tag:Tr8s6m+MTw/TjbtX0RS2yw==,type:comment]
+                          #ENC[AES256_GCM,data:rY2TTfjjSVcI8OLPiTXOhFlVKZjnlfBu1bFXmdBM,iv:kDhjmx5XCWkkCuYi6f+JmYUazmwn7mNTQx4zR/wIzvs=,tag:fQ3RSnk1FJCblxSFUTMqWA==,type:comment]
+                          #ENC[AES256_GCM,data:iUkVWTYtt7cavD1TJ/5NAuispdLteT1aaC9UswWiRQ==,iv:EcYhk6b5yvvncYIT0AHJ/Cd4eGZsnjRzphxB/F4iQvw=,tag:9vJ0lQQdUo9lJq6lYJZj1g==,type:comment]
+                          #ENC[AES256_GCM,data:nKw8Kcqm71AZWOEZBnyViS7JPvm6cTLVcpEO8qgMHAJOKO9KKXIEDQ==,iv:yUD9iIuT+82Bo02pvctYiYscTi7GOxMPGMtqk7gxM7E=,tag:i86gxCebiwRhg1veWfW+tA==,type:comment]
+                          #ENC[AES256_GCM,data:C0bC6xT0G8XFd6TZzh27P/bh1QVa+hrJZeTlkHJq4TJYPuwfh0Yampp6WiY3zmSofCreX1SbuT8WRJZM/DU=,iv:+sKgTmHngJIFcuX5I44jFWY5kH3HLteyHuFC2bNfnd0=,tag:EAXPqbBdtF/ISiIKnH726Q==,type:comment]
+                          #ENC[AES256_GCM,data:A4ccb1qJcnsM5KYaXigrMm0+DrOumI0gkdrQa4/CvUzYy4hcyxPe/d39rpkK2wzOPCKbVKpylkUML6rub2/G1kp4KGxYKIlimVufRuCQ9MTFpMuztZU=,iv:jVpzQUGYUTqGltlQL8bpcmo03J4U/6rJd0NRFD7yHPc=,tag:rZ8NhAGVG8aZzynCQEBhqw==,type:comment]
                 techdocs:
                     publisher:
                         azureBlobStorage:
@@ -85,8 +85,8 @@ sops:
             T1NDOEUyYWtzT1ZkNVZjYVlZNm9IVGsKYaeKgaUL+4LiZfyqF3R8wXV8WYh6NaPS
             PBhV7btxJqabQXaeHBa//G8OMNBHpu2zPI7mh8iGmYxo0LrGKtg5NA==
             -----END AGE ENCRYPTED FILE-----
-    lastmodified: "2023-12-13T06:11:46Z"
-    mac: ENC[AES256_GCM,data:BuWOKpntTeMI1r1RxaX2IjN2Dex+B+JPlo393rnQA4QWYC6jFcGoCPCSfO2VI7e3Ci1itSDqExrYeuccMZBteyAWSM5EM/usIU3tp2V3AXTXaJhlIjSHqDEhpxj3sb9HmBUimsi56E4C4w2WJICHeMxo1SzHxci/ibhgB4g3yCg=,iv:DU67/yHsmIfDDruz3vOkfDg5fwK/pwk2DSTMg9CPgAQ=,tag:48zL/s6QBBYrOgyONgoULA==,type:str]
+    lastmodified: "2023-12-14T09:56:13Z"
+    mac: ENC[AES256_GCM,data:XDKvCkDpcE1vo8UE4DgMkhmj/koqAnsaUxgsNQLah6/vsFIBMgmGUHuuOPqaXcs6YqTiBzuMRR0Zg/HTtxZXnVn1zhJzFTevf7qQNL2Yy83qb49LGJXZwonU0xmHh8PKUixHIaCZSHN+mvT62rFFNsjB2+xHLg3T72fz19LnSyc=,iv:dfoeFma33fs/RhV81OJlKj9aMEyJppD3iX9GXt3MrEM=,tag:mwK1HYRrT4U1LYe2n3ICOA==,type:str]
     pgp: []
     unencrypted_suffix: _unencrypted
     version: 3.7.3
