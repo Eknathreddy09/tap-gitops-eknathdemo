@@ -8,7 +8,7 @@ secrets:
         git:
             basic_auth:
                 username: ENC[AES256_GCM,data:uRQveUBuw7VcXA+Rzg==,iv:DDJ6MaCfgPdHnFT3I9APzrBSPH00HrHQ19d9V813w2A=,tag:/06nyi4PR8FVtv7hnRCX+w==,type:str]
-                password: ENC[AES256_GCM,data:LCsX3CeAzGEh8GjnamNlQbZ/jRER80VtQpGz8YZMGnnwYr64P58yPg==,iv:ElxMAQFQw6GK/VmBxsvdTzuS0Gy0/nXvywzOu7VZRP0=,tag:iDVfTbAy+e+QyQiO2OcwAw==,type:str]
+                password: ENC[AES256_GCM,data:GujGMOamCM9o2bbrYTxYNIre/j3rhncwXKG1DitrMKPuMBu5KmejQQ==,iv:zCNysW+xGO+ftuGikskkPzE016xQQJNVvvsjtiDS6ds=,tag:GAMxnyikE8PB++z706Fm5g==,type:str]
 sops:
     kms: []
     gcp_kms: []
@@ -24,8 +24,8 @@ sops:
             Qm54V3lPclNiQjcwUy83bXlzK0gwTzAKYvxjHKCMPJeNs0uHZurT6akNp2jvH/sj
             TW48An/sBZqLHPPnVf8cCeAnJPPzY6C8CS7IxUWWcCXAhG2zF2+xAQ==
             -----END AGE ENCRYPTED FILE-----
-    lastmodified: "2023-10-30T07:50:10Z"
-    mac: ENC[AES256_GCM,data:xKxwwLoRT0FTpPJkehhP/mlRwsaY+wvaZfgZHRBWb+9hZzW+KGGA6jE4yHGGIYsKuf1BS09wQtaViBOtkWKBcTjeLFSpznaKFXLhwi76Dy+DHI1H4WXi1ncNWYzcys7CMFEN33mT38JnY5zhvrUweFyMGmvp+4dKpPa4pgEiCT4=,iv:f9QjC9ju/FJbWVfN6Nmvxsj/URUUsGM7qcxz/nXu2Qk=,tag:zkqN39ZWgN47jx8Qtgoakg==,type:str]
+    lastmodified: "2024-01-29T05:22:02Z"
+    mac: ENC[AES256_GCM,data:RsoU2p+yHjuIbDhwaZ/dyjBH/lez3B22s+Q5NWiLGuie8Lp9vd1ZbOAaW0a8qCsSyZHErHY3Fb25M6WITzU9z0CbE0TeMPhppLjEZytSjojQr59w9mYjE/l7M3RcZowoiCugEhVhNxX+qRdXeIoLhkc43YILyFhJ7CmqrlGze4o=,iv:h5vBXhYmC5l04Xt8xv6qZzYt8Vr421RobiqhpHknh4M=,tag:+vpFqpVj2KMZRtL284p4Kw==,type:str]
     pgp: []
     unencrypted_suffix: _unencrypted
     version: 3.7.3
