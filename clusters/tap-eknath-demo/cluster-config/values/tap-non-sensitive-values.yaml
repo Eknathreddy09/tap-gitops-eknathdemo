@@ -93,8 +93,8 @@ tap_install:
     ootb_supply_chain_testing_scanning:
       scanning:
         image:
-          template: carbonblack-private-image-scan-template
-          policy: cb-scan-policy
+#          template: carbonblack-private-image-scan-template
+          policy: scan-policy
         source:
           policy: scan-policy
 #          template: blob-source-scan-template
