@@ -10,4 +10,4 @@ metadata:
 spec:
   fetch:
     imgpkgBundle:
-      image: #@ "{}:{}".format(data.values.tap_install.package_repository.oci_repository, data.values.tap_install.version.package_repo_bundle_tag)
+      image: exploreindiatapsolreg.azurecr.io/tap180/tap-packages:1.8.0
