@@ -4,4 +4,4 @@ git:
   ref: origin/main
   sub_path: clusters/tap-eknath-demo/cluster-config
 tap_package_repository:
-  oci_repository: exploreindiatapsolreg.azurecr.io/tap172/tap-packages
+  oci_repository: exploreindiatapsolreg.azurecr.io/tap180/tap-packages
