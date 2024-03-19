@@ -22,12 +22,12 @@ tap_install:
       secrets:
       - name: patch-spring-conventions
     shared:
-      kubernetes_version: "1.28.3"
+      kubernetes_version: "1.27.9"
       ingress_issuer: "letsencrypt-prod"
       ingress_domain: "demo.vmwareexploreindia.com"
 #      ca_cert_data: |
       image_registry:
-        project_path: "exploreindiatapsolreg.azurecr.io/tap180/tap-packages"
+        project_path: "exploreindiatapsolreg.azurecr.io/tap181/tap-packages"
         secret: 
           name: "buildservice-creds"
           namespace: "tap-install"
@@ -35,7 +35,7 @@ tap_install:
     buildservice:
       injected_sidecar_support: true
       exclude_dependencies: true
-      kp_default_repository: "exploreindiatapsolreg.azurecr.io/tap180/tap-packages/build-service"
+      kp_default_repository: "exploreindiatapsolreg.azurecr.io/tap181/tap-packages/build-service"
       kp_default_repository_secret:
         name: "buildservice-creds"
         namespace: "tap-install"
@@ -100,7 +100,7 @@ tap_install:
 #          template: blob-source-scan-template
       registry:
         server: "exploreindiatapsolreg.azurecr.io"
-        repository: "tap172/tap-packages/build-service"
+        repository: "tap181/tap-packages/build-service"
       gitops:
           server_address: https://github.com/
           repository_owner: explore-india-booth
