@@ -95,6 +95,7 @@ tap_install:
         supply_chain_service_account:
           secrets:
             - sync-git
+            - supply-chain-oci-store-credentials
     excluded_packages:
       - workshops.learningcenter.tanzu.vmware.com
     supply_chain: testing_scanning
