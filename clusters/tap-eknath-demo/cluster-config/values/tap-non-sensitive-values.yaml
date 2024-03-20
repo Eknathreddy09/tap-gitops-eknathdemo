@@ -89,7 +89,8 @@ tap_install:
             subPath: ns-provisioner-samples/tanzu-supply-chain
       import_data_values_secrets: 
       - name: supply-chain-oci-store-credentials
-        namespace: tap-namespace-provisioning
+        namespace: tap-install
+        create_export: true
       default_parameters:
         supply_chain_service_account:
           secrets:
