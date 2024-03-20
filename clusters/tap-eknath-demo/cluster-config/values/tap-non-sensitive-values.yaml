@@ -3,9 +3,9 @@ tap_install:
   values:
     profile: full
     package_overlays:
-    - name: ootb-supply-chain-testing-scanning
-      secrets:
-      - name: ootb-supply-chain-testing-scanning-add-source-scanner
+#    - name: ootb-supply-chain-testing-scanning
+#      secrets:
+#      - name: ootb-supply-chain-testing-scanning-add-source-scanner
     - name: tap-gui
       secrets:
       - name: tdp-app-image-overlay-secret-all
