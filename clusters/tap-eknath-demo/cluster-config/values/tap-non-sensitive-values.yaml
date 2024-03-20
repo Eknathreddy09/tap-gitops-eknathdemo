@@ -87,7 +87,7 @@ tap_install:
             url: https://github.com/vmware-tanzu/application-accelerator-samples.git
             ref: origin/main
             subPath: ns-provisioner-samples/tanzu-supply-chain
-            secretRef: 
+            import_data_values_secrets: 
             - name: supply-chain-oci-store-credentials
               namespace: tap-install
       default_parameters:
